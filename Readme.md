@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Аскерко](https://up.htmlacademy.ru/htmlcss/26/user/1175573).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Остаповец`.(https://htmlacademy.ru/profile/seraphim)
 
 ---
 
