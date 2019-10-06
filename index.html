@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/nerds.css">
+  <title>
+    Главая Нёрдс
+  </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
 </head>
 <body>
 <header class="header">
-  <div class="container">
+    <div class="container">
     <div class="header-top-string">
       <div class="logo">
         <img src="img/nerds-logo.png" alt="Логотип Нердс">
@@ -15,36 +18,35 @@
       <div>
         <ul class="header-navigation-item">
           <li>
-            <a href="">
+            <a href="" class="link">
               Студия
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="link">
               Клиенты
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="catalog.html" class="link">
               Магазин
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="link">
               Контакты
             </a>
           </li>
         </ul>
       </div>
       <div class="cart">
-        <img src="" alt="" class="cart-icon">
-        <a href="">
+        <img src="img/svg-nerds/cart-icon.svg" alt="" class="">
+        <a href="" class="link">
           Корзина
         </a>
       </div>
     </div>
     <section class="slider">
-      <div class="container">
         <h2 class="visually-hidden">
           Преимущества
         </h2>
@@ -103,7 +105,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </section>
   </div>
 </header>
@@ -191,26 +192,138 @@
     </div>
     <section class="about-us-desc">
       <div class="about-us-left-column">
+        <p class="about-us">
+          <span>
+             Мы — маленькая, но гордая
+          </span>
+            <span>
+          дизайн-студия из Краснодара.
+         </span>
+        </p>
+        <p class="slogan">
+          <span>
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            </span>
+          <span>
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </span>
+        </p>
+        <ul class="opportunities-list">
+          <li class="opportunities-list-title">
+            Выполняем заказы на разработку:
+          </li>
+          <li>
+            <div class="little-red-line">
+            </div>
+              <span>
+                Веб-сайтов любой сложности
+              </span>
+          </li>
+          <li>
+            <div class="little-red-line">
+            </div>
+            <span>
+              Мобильных приложений для iOS и Android
+            </span>
+          </li>
+          <li>
+            <div class="little-red-line">
+            </div>
+            <span>
+              Слайдшоу и видео для корпоративных презентаций
+            </span>
+          </li>
+        </ul>
       </div>
       <div class="about-us-right-column">
+        <div class="about-us-right-column-container">
+        <div class="about-us-logo">
+          <img src="./img/nerds-illustration.jpg" alt="здесь будет логотип нердс">
+        </div>
+        <p>
+          с 2004 года Любим точность во всем:
+        </p>
+        <ul class="our-promise">
+          <li>
+            <h3>
+              146%
+            </h3>
+            <span>
+              Уровень
+              самоотдачи
+            </span>
+          </li>
+          <li>
+            <h3>
+              100%
+            </h3>
+            <span>
+              Соблюдение
+              сроков
+            </span>
+          </li>
+          <li>
+            <h3>
+              50%
+            </h3>
+            <span>
+              Минимальная
+              предоплата
+            </span>
+          </li>
+        </ul>
       </div>
+        </div>
     </section>
     <div class="line-middle">
       <img src="./img/line.png" alt="">
     </div>
     <section class="brands-string">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href=""><img src="img/logo-html-academy.png" alt=""></a></li>
+        <li><img src="img/vertical-line.png" alt=""></li>
+
+
+        <li><a href=""><img src="img/logo-borodinski.png" alt=""></a></li>
+        <li><img src="img/vertical-line.png" alt=""></li>
+        <li><a href=""><img src="img/logo-pink.png" alt=""></a></li>
+        <li><img src="img/vertical-line.png" alt=""></li>
+        <li><a href=""><img src="img/logo-mishka.png" alt=""></a></li>
       </ul>
     </section>
     <div class="line-bottom">
       <img src="./img/line.png" alt="">
     </div>
     <div class="yandex-map">
+      <div class="map-marker">
+        <img src="img/map-marker.png" alt="">
+      </div>
       <div class="write-us-block">
+        <h3 class="write-us-block-title">
+          NЁRDS DESIGN STUDIO
+        </h3>
+        <ul class="write-us-block-adress">
+          <li class="address">
+            <span>
+          191186, Санкт-Петербург,
+            </span>
+            <span>
+          ул. Б. Конюшенная, д. 19/8
+        </span>
+          </li>
+          <li>
+            <span>
+            тел. +7 (812) 275-75-75
+            </span>
+          </li>
+          <li>
+            <form action="#" method="#">
+              <button type="button" name="button" class="write-us-button">
+              Напишите нам
+            </button>
+            </form>
+          </li>
+        </ul>
       </div>
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor"
@@ -245,5 +358,49 @@
       </span>
   </div>
 </footer>
+<div class="container-popup">
+  <form action="#" method="post">
+    <fieldset class="popup">
+      <h3 class="popup-title">
+        Напишите нам
+      </h3>
+      <ul class="form-submit">
+        <li class="input-popup">
+          <div>
+            <label for="name">
+              Ваше имя
+            </label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="email">
+              Ваш e-mail
+            </label>
+            <input id="email" type="email" name="name" placeholder="askerbl67@gmail.com">
+          </div>
+        </li>
+        <li>
+          <label for="text-latter">
+            Текст письма:
+          </label>
+          <textarea id="text-latter" name="text-latter" placeholder="В свободной форме" class="textarea-popup">
+        </textarea>
+        </li>
+        <li>
+          <label>
+            <input type="submit" name="send" class="send-button">
+          </label>
+        </li>
+        <li>
+          <div class="button-close">
+            <button type="button" class="close-popup">
+              <img src="img/close-cross.png" alt="закрыть форму отправки">
+            </button>
+          </div>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</div>
 </body>
 </html>
