@@ -5,48 +5,49 @@
   <title>
     Главая Нёрдс
   </title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
-    <div class="container">
-    <div class="header-top-string">
-      <div class="logo">
-        <img src="img/nerds-logo.png" alt="Логотип Нердс">
+  <div class="container">
+    <div class="container-header">
+      <div class="header-top-string">
+        <div class="logo">
+          <img src="img/nerds-logo.png" alt="Логотип Нердс">
+        </div>
+        <div>
+          <ul class="header-navigation-item">
+            <li>
+              <a href="" class="link-header">
+                Студия
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-header">
+                Клиенты
+              </a>
+            </li>
+            <li>
+              <a href="catalog.html" class="link-header">
+                Магазин
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-header">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cart">
+          <img src="img/svg-nerds/cart-icon.svg" alt="">
+          <a href="#" class="link-header">
+            Корзина
+          </a>
+        </div>
       </div>
-      <div>
-        <ul class="header-navigation-item">
-          <li>
-            <a href="" class="link">
-              Студия
-            </a>
-          </li>
-          <li>
-            <a href="" class="link">
-              Клиенты
-            </a>
-          </li>
-          <li>
-            <a href="catalog.html" class="link">
-              Магазин
-            </a>
-          </li>
-          <li>
-            <a href="" class="link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="cart">
-        <img src="img/svg-nerds/cart-icon.svg" alt="" class="">
-        <a href="" class="link">
-          Корзина
-        </a>
-      </div>
-    </div>
-    <section class="slider">
+      <section class="slider">
         <h2 class="visually-hidden">
           Преимущества
         </h2>
@@ -94,7 +95,7 @@
             <h3>
               Только ночь,
               <br>
-               только хардкор
+              только хардкор
             </h3>
             <p>
               Работать днем, как все? Мы против этого.
@@ -105,11 +106,12 @@
             </a>
           </li>
         </ul>
-    </section>
+      </section>
+    </div>
   </div>
 </header>
 <main>
-  <div class="container-main">
+  <div class="container">
     <section class="advantages">
       <div class="webs">
         <ul class="services-list">
@@ -130,9 +132,9 @@
               </span>
           </li>
           <li>
-            <button type="button" name="button" class="button-to-order-webs button-to-order">
+            <a href="" class="button-to-order-webs button-to-order">
               ЗАКАЗАТЬ
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -155,9 +157,9 @@
               </span>
           </li>
           <li>
-            <button type="button" name="button" class="button-to-order-apps button-to-order">
+            <a href="" class="button-to-order-apps button-to-order">
               ЗАКАЗАТЬ
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -180,15 +182,14 @@
               </span>
           </li>
           <li>
-            <button type="button" name="button" class="button-to-order-presentation button-to-order">
+            <a href="" class="button-to-order-presentation button-to-order">
               ЗАКАЗАТЬ
-            </button>
+            </a>
           </li>
         </ul>
       </div>
     </section>
     <div class="line-top">
-      <img src="./img/line.png" alt="">
     </div>
     <section class="about-us-desc">
       <div class="about-us-left-column">
@@ -196,7 +197,7 @@
           <span>
              Мы — маленькая, но гордая
           </span>
-            <span>
+          <span>
           дизайн-студия из Краснодара.
          </span>
         </p>
@@ -215,7 +216,7 @@
           <li>
             <div class="little-red-line">
             </div>
-              <span>
+            <span>
                 Веб-сайтов любой сложности
               </span>
           </li>
@@ -237,125 +238,140 @@
       </div>
       <div class="about-us-right-column">
         <div class="about-us-right-column-container">
-        <div class="about-us-logo">
-          <img src="./img/nerds-illustration.jpg" alt="здесь будет логотип нердс">
-        </div>
-        <p>
-          с 2004 года Любим точность во всем:
-        </p>
-        <ul class="our-promise">
-          <li>
-            <h3>
-              146%
-            </h3>
-            <span>
+          <div class="about-us-logo">
+            <img src="./img/nerds-illustration.jpg" alt="здесь будет логотип нердс">
+          </div>
+          <p>
+            с 2004 года Любим точность во всем:
+          </p>
+          <ul class="our-promise">
+            <li>
+              <h3>
+                146%
+              </h3>
+              <span>
               Уровень
               самоотдачи
             </span>
-          </li>
-          <li>
-            <h3>
-              100%
-            </h3>
-            <span>
+            </li>
+            <li>
+              <h3>
+                100%
+              </h3>
+              <span>
               Соблюдение
               сроков
             </span>
-          </li>
-          <li>
-            <h3>
-              50%
-            </h3>
-            <span>
+            </li>
+            <li>
+              <h3>
+                50%
+              </h3>
+              <span>
               Минимальная
               предоплата
             </span>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <div class="line-middle">
-      <img src="./img/line.png" alt="">
     </div>
     <section class="brands-string">
       <ul>
-        <li><a href=""><img src="img/logo-html-academy.png" alt=""></a></li>
-        <li><img src="img/vertical-line.png" alt=""></li>
-
-
-        <li><a href=""><img src="img/logo-borodinski.png" alt=""></a></li>
-        <li><img src="img/vertical-line.png" alt=""></li>
-        <li><a href=""><img src="img/logo-pink.png" alt=""></a></li>
-        <li><img src="img/vertical-line.png" alt=""></li>
-        <li><a href=""><img src="img/logo-mishka.png" alt=""></a></li>
+        <li>
+          <a href="">
+            <img src="img/logo-html-academy.png" alt="" class="logo-brand">
+          </a>
+        </li>
+        <li>
+        </li>
+        <li>
+          <a href=""><img src="img/logo-borodinski.png" alt="" class="logo-brand">
+          </a>
+        </li>
+        <li>
+        </li>
+        <li>
+          <a href=""><img src="img/logo-pink.png" alt="" class="logo-brand">
+          </a>
+        </li>
+        <li>
+        </li>
+        <li>
+          <a href=""><img src="img/logo-mishka.png" alt="" class="logo-brand">
+          </a>
+        </li>
       </ul>
     </section>
     <div class="line-bottom">
-      <img src="./img/line.png" alt="">
     </div>
-    <div class="yandex-map">
-      <div class="map-marker">
-        <img src="img/map-marker.png" alt="">
-      </div>
-      <div class="write-us-block">
-        <h3 class="write-us-block-title">
-          NЁRDS DESIGN STUDIO
-        </h3>
-        <ul class="write-us-block-adress">
-          <li class="address">
+  </div>
+  <div class="map">
+    <div class="map-marker">
+      <img src="img/map-marker.png" alt="">
+    </div>
+    <div class="write-us-block">
+      <h3 class="write-us-block-title">
+        NЁRDS DESIGN STUDIO
+      </h3>
+      <ul class="write-us-block-adress">
+        <li class="address">
             <span>
           191186, Санкт-Петербург,
             </span>
-            <span>
+          <span>
           ул. Б. Конюшенная, д. 19/8
         </span>
-          </li>
-          <li>
+        </li>
+        <li>
             <span>
             тел. +7 (812) 275-75-75
             </span>
-          </li>
-          <li>
-            <form action="#" method="#">
-              <button type="button" name="button" class="write-us-button">
+        </li>
+        <li>
+            <a href="#" class="write-us-button">
               Напишите нам
-            </button>
-            </form>
-          </li>
-        </ul>
-      </div>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor"
-        width="1440px" height="416px" frameborder="0"></iframe>
+            </a>
+        </li>
+      </ul>
     </div>
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;
+      source=constructor" frameborder="0">
+    </iframe>
   </div>
 </main>
-<footer class="social-media-footer">
-  <ul class="socials">
-    <li class="footer-social-link">
-      <a href="https://www.facebook.com/">
-        <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук">
-      </a>
-    </li>
-    <li class="footer-social-link">
-      <a href="https://www.instagram.com/?hl=ru">
-        <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм">
-      </a>
-    </li>
-    <li class="footer-social-link">
-      <a href="https://twitter.com/?lang=ru">
-        <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер">
-      </a>
-    </li>
-  </ul>
-  <div class="offer">
+<footer>
+  <div class="container">
+    <div class="social-media-footer">
+      <ul class="socials">
+        <li class="footer-social-link">
+          <a href="https://www.facebook.com/">
+            <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук">
+          </a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://www.instagram.com/?hl=ru">
+            <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм">
+          </a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://twitter.com/?lang=ru">
+            <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер">
+          </a>
+        </li>
+      </ul>
+      <div class="offer">
       <span>
         Давайте дружить, это выгодно!
       </span>
-    <span>
+        <span>
         Скидка 10% для друзей из социальных сетей.
       </span>
+      </div>
+    </div>
   </div>
 </footer>
 <div class="container-popup">
@@ -365,7 +381,7 @@
         Напишите нам
       </h3>
       <ul class="form-submit">
-        <li class="input-popup">
+        <li class="input-string">
           <div>
             <label for="name">
               Ваше имя
@@ -383,8 +399,8 @@
           <label for="text-latter">
             Текст письма:
           </label>
-          <textarea id="text-latter" name="text-latter" placeholder="В свободной форме" class="textarea-popup">
-        </textarea>
+          <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
+                    class="textarea-popup"></textarea>
         </li>
         <li>
           <label>
@@ -394,7 +410,6 @@
         <li>
           <div class="button-close">
             <button type="button" class="close-popup">
-              <img src="img/close-cross.png" alt="закрыть форму отправки">
             </button>
           </div>
         </li>
@@ -404,3 +419,4 @@
 </div>
 </body>
 </html>
+

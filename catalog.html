@@ -5,13 +5,13 @@
   <title>
     Каталог
   </title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header-catalog ">
-  <div class="container-catalog">
-    <div class="header-top-string">
+<header class="header-catalog">
+  <div class="container">
+    <div class="header-top-string-catalog">
       <div class="logo">
         <a href="index.html">
           <img src="img/nerds-logo.png" alt="Логотип Нердс">
@@ -20,41 +20,41 @@
       <div>
         <ul class="header-navigation-item">
           <li>
-            <a href="" class="link">
+            <a href="" class="link-header">
               Студия
             </a>
           </li>
           <li>
-            <a href="" class="link">
+            <a href="" class="link-header">
               Клиенты
             </a>
           </li>
           <li>
-            <a href="#" class="link">
+            <a href="#" class="link-header link-header-current">
               Магазин
             </a>
           </li>
           <li>
-            <a href="" class="link">
+            <a href="" class="link-header">
               Контакты
             </a>
           </li>
         </ul>
       </div>
       <div class="cart">
-        <a href="" class="link">
+        <a href="" class="link-header">
           <img src="img/svg-nerds/cart-icon.svg" alt="" class="">
           Корзина
         </a>
       </div>
-    </div>
     <h1 class="header-title">
       Магазин готовых шаблонов
     </h1>
   </div>
+  </div>
 </header>
 <main>
-  <div class="container-catalog-main">
+  <div class="container">
     <section class="catalog">
       <div class="filter">
       <span class="filter-title">
@@ -99,22 +99,22 @@
           </span>
             <ul class="filter-for-grid">
               <li>
-                <label>
-                  <input type="radio" name="grid" value="#" class="radio-off-on">
+                <label for="mayday" class="filter-label">
                   Адаптивная
                 </label>
+                  <input id="mayday" type="radio" name="grid" value="#" class="radio-off-on">
               </li>
               <li>
-                <label>
-                  <input type="radio" name="grid" value="#" class="radio-off-on">
+                <label for="mayday" class="filter-label">
                   Фиксированная
                 </label>
+                <input id="mayday" type="radio" name="grid" value="#" class="radio-off-on">
               </li>
               <li>
-                <label>
-                  <input type="radio" name="grid" value="#" class="radio-off-on">
+                <label for="mayday" class="filter-label">
                   Резиновая
                 </label>
+                <input id="mayday" type="radio" name="grid" value="#" class="radio-off-on">
               </li>
             </ul>
           </div>
@@ -124,43 +124,41 @@
           </span>
             <ul class="filter-of-features">
               <li>
-                <label>
-                  <input type="checkbox" name="#" class="checkbox">
-                  Слайдер
+                <label class="filter-label-second">
+                  <input type="checkbox" name="#" class="checkbox" hidden>
+                  <span class="span">Слайдер</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="#" value="#" class="checkbox">
+              <!--<li>
+                <label for="" class="filter-label-second">
                   Блок преимуществ
                 </label>
+                <input id="" type="checkbox" name="#" class="checkbox">
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="#" value="#" class="checkbox">
+                <label for="mayday" class="filter-label-second">
                   Новости
                 </label>
+                <input id="mayday" type="checkbox" name="#" class="checkbox">
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="#" value="#" class="checkbox">
+                <label for="mayday" class="filter-label-second">
                   Галерея
                 </label>
+                <input id="mayday" type="checkbox" name="#" class="checkbox">
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="#" value="#" class="checkbox">
-                  Корзина
+                <label class="filter-label-second">
+                  <input type="checkbox" name="#" class="checkbox">
+                    Корзина
                 </label>
-              </li>
+              </li>-->
             </ul>
           </div>
-          <div class="">
-            <form action="">
-              <button type="button" class="button-filter">
-                Показать
-              </button>
-            </form>
+          <div>
+           <button class="button-filter">
+             Показать
+           </button>
           </div>
         </form>
       </div>
@@ -361,7 +359,7 @@
         </div>
       </div>
     </section>
-    <div class="yandex-map">
+    <div class="map">
       <div class="map-marker">
         <img src="img/map-marker.png" alt="">
       </div>
