@@ -237,44 +237,59 @@
         </ul>
       </div>
       <div class="about-us-right-column">
-        <div class="about-us-right-column-container">
           <div class="about-us-logo">
             <img src="./img/nerds-illustration.jpg" alt="здесь будет логотип нердс">
           </div>
-          <p>
+        <p>
             с 2004 года Любим точность во всем:
           </p>
-          <ul class="our-promise">
+          <ul class="our-promise-top">
             <li>
-              <h3>
-                146%
-              </h3>
-              <span>
-              Уровень
-              самоотдачи
-            </span>
+              146
+               <sup>
+                 %
+               </sup>
             </li>
             <li>
-              <h3>
-                100%
-              </h3>
-              <span>
-              Соблюдение
-              сроков
-            </span>
+              100
+                <sup>
+                %
+              </sup>
             </li>
             <li>
-              <h3>
-                50%
-              </h3>
-              <span>
-              Минимальная
-              предоплата
-            </span>
+              50
+                <sup>
+                %
+              </sup>
             </li>
           </ul>
+        <ul class="our-promise-bottom">
+          <li>
+             <span>
+               Уровень
+             </span>
+              <span>
+                самоотдачи
+              </span>
+          </li>
+          <li>
+            <span>
+              Соблюдение
+            </span>
+            <span>
+                  сроков
+                </span>
+          </li>
+          <li>
+            <span>
+              Минимальная
+            </span>
+             <span>
+               предоплата
+            </span>
+          </li>
+        </ul>
         </div>
-      </div>
     </section>
     <div class="line-middle">
     </div>
@@ -309,6 +324,50 @@
     </div>
   </div>
   <div class="map">
+    <div class="container-popup show-popup">
+      <form action="#" method="post">
+        <fieldset class="popup">
+          <h3 class="popup-title">
+            Напишите нам
+          </h3>
+          <ul class="form-submit">
+            <li class="input-string">
+              <div>
+                <label for="name">
+                  Ваше имя
+                </label>
+                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+              </div>
+              <div>
+                <label for="email">
+                  Ваш e-mail
+                </label>
+                <input id="email" type="email" name="e-mail" placeholder="askerbl67@gmail.com">
+              </div>
+            </li>
+            <li>
+              <label for="text-latter">
+                Текст письма:
+              </label>
+              <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
+                        class="textarea-popup">
+              </textarea>
+            </li>
+            <li>
+              <label>
+                <input type="submit" name="send" class="send-button">
+              </label>
+            </li>
+            <li>
+              <div class="button-close">
+                <button type="button" class="close-popup">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
     <div class="map-marker">
       <img src="img/map-marker.png" alt="">
     </div>
@@ -331,9 +390,9 @@
             </span>
         </li>
         <li>
-            <a href="#" class="write-us-button">
-              Напишите нам
-            </a>
+          <a href="#" class="write-us-button">
+            Напишите нам
+          </a>
         </li>
       </ul>
     </div>
@@ -374,49 +433,10 @@
     </div>
   </div>
 </footer>
-<div class="container-popup">
-  <form action="#" method="post">
-    <fieldset class="popup">
-      <h3 class="popup-title">
-        Напишите нам
-      </h3>
-      <ul class="form-submit">
-        <li class="input-string">
-          <div>
-            <label for="name">
-              Ваше имя
-            </label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-          </div>
-          <div>
-            <label for="email">
-              Ваш e-mail
-            </label>
-            <input id="email" type="email" name="name" placeholder="askerbl67@gmail.com">
-          </div>
-        </li>
-        <li>
-          <label for="text-latter">
-            Текст письма:
-          </label>
-          <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
-                    class="textarea-popup"></textarea>
-        </li>
-        <li>
-          <label>
-            <input type="submit" name="send" class="send-button">
-          </label>
-        </li>
-        <li>
-          <div class="button-close">
-            <button type="button" class="close-popup">
-            </button>
-          </div>
-        </li>
-      </ul>
-    </fieldset>
-  </form>
-</div>
+<script src="js/popup.js">
+</script>
 </body>
 </html>
+
+
 
