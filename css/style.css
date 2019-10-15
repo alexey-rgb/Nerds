@@ -1533,8 +1533,8 @@ input[type=radio]:checked + .sort-string-hidden-input {
   width: 200px;
   max-height: 50px;
   overflow: hidden;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 
   background-color: #00bc6c;
 
