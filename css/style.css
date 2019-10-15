@@ -29,14 +29,41 @@
 
 /* Общие */
 
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.feedback {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.feedback p {
+  margin-bottom: 0;
+}
+
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after { box-sizing: inherit; }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
-  margin: 0;
+
+  min-width: 1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -47,7 +74,7 @@ body {
   background-color: #ffffff;
 }
 
-img {
+/*img {
   max-width: 100%;
 }
 
@@ -57,7 +84,7 @@ ul {
 
 a {
   text-decoration: none;
-}
+}*/
 
 .visually-hidden {
   position: absolute;
@@ -622,7 +649,7 @@ a {
 }
 
 .our-promise-top li:nth-child(2) {
- transform: translateX(-35px);
+  transform: translateX(-35px);
 }
 
 .our-promise-top li:nth-child(3) {
@@ -803,7 +830,7 @@ iframe {
   left: 50%;
   transform: translate(-50%, -25%);
   /*animation-duration: 1s;*/
- /* animation-name: popup;*/
+  /* animation-name: popup;*/
 }
 
 .popup {
@@ -823,7 +850,7 @@ iframe {
 }*/
 
 .show-popup {
- display: block;
+  display: block;
 }
 
 .popup-title {
@@ -855,7 +882,7 @@ iframe {
 }
 
 .form-submit input {
- /* background-color: black;*/
+  /* background-color: black;*/
 }
 
 .form-submit input:hover:not(.send-button) {
@@ -1452,6 +1479,13 @@ input[type=radio]:checked + .sort-string-hidden-input {
   justify-content: space-between;
 }
 
+.flex-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 80px 0 80px;
+}
+
 .catalog-cart {
   width: 360px;
   min-height: 576px;
@@ -1460,15 +1494,84 @@ input[type=radio]:checked + .sort-string-hidden-input {
   margin-bottom: 33px;
 }
 
-.catalog-cart:hover .hover-block {
+.catalog-cart:hover .hover-block-container {
   display: block;
 }
 
-.hover-block {
-  display: none;
+/* ПРОБНИК КАРТОЧКИ ТОВАРА */
 
+.hover-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #b4b9bb;
   width: 360px;
-  min-height: 231px;
+  height: 231px;
+
+  padding-top: 35px;
+  padding-bottom: 43px;
+}
+
+.card-popup-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background-color: #eab534;
+
+  margin: 0;
+  padding: 0;
+  max-height: 50px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.card-popup-text {
+  width: 200px;
+  max-height: 50px;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  background-color: #00bc6c;
+
+  color: #666666;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  min-height: 34px;
+}
+
+.hover-block-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #fb565a;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.card-popup-price {
+  margin: 0;
+  padding: 0;
+}
+
+/* КОНЕЦ ПРОБНИКА */
+
+.hover-block-container {
+  /*display: none;*/
 
   padding: 0;
   margin: 0;
@@ -1488,7 +1591,7 @@ input[type=radio]:checked + .sort-string-hidden-input {
 
 .web-hover-list {
   margin: 30px 80px 0 80px;
-  background-color: #eab534;
+  /*background-color: #eab534;*/
 }
 
 .web-hover-list li:first-child {
