@@ -14,11 +14,11 @@
     <div class="header-top-string-catalog">
       <div class="logo">
         <a href="index.html">
-          <img src="img/nerds-logo.png" alt="Логотип Нердс">
+          <img src="img/nerds-logo.png" alt="Логотип Нердс" width="160" height="65">
         </a>
       </div>
       <div>
-        <ul class="header-navigation-item">
+        <ul class="header-navigation-item feedback">
           <li>
             <a href="" class="link-header">
               Студия
@@ -43,61 +43,61 @@
       </div>
       <div class="cart">
         <a href="" class="link-header">
-          <img src="img/svg-nerds/cart-icon.svg" alt="" class="">
+          <img src="img/svg-nerds/cart-icon.svg" alt="тут корзина">
           Корзина
         </a>
       </div>
     </div>
     <h1 class="header-title">
-    Магазин готовых шаблонов
-  </h1>
+      Магазин готовых шаблонов
+    </h1>
   </div>
 </header>
 <main>
   <div class="container">
     <section class="catalog">
       <div class="filter">
-      <span class="filter-title">
-        Стоимость:
-      </span>
-         <div class="container-input-range">
-            <div class="row">
-              <div class="line">
-                <div class="min">
-                </div>
-                <div class="max">
-                </div>
+        <span class="filter-title">
+          Стоимость:
+        </span>
+        <div class="container-input-range">
+          <div class="row">
+            <div class="line">
+              <div class="min">
+              </div>
+              <div class="max">
               </div>
             </div>
           </div>
-          <div class="container-price-reference">
-            <div class="min-value">
-              <span>
-               от
-              </span>
-              <div class="background-price-reference">
-                <output class="output-min">
-                  0
-                </output>
-              </div>
+        </div>
+        <div class="container-price-reference">
+          <div class="min-value">
+            <span>
+              от
+            </span>
+            <div class="background-price-reference">
+              <output class="output-min">
+                0
+              </output>
             </div>
-            <div class="max-value">
+          </div>
+          <div class="max-value">
             <span>
               до
             </span>
-              <div class="background-price-reference">
-                <output class="output-max">
-                  15000
-                </output>
-              </div>
+            <div class="background-price-reference">
+              <output class="output-max">
+                15000
+              </output>
             </div>
           </div>
-        <form action="#" method="#">
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <div class="grid-filter">
-          <span class="filter-title">
-           Сетка:
-          </span>
-            <ul class="filter-for-grid">
+            <span class="filter-title">
+              Сетка:
+            </span>
+            <ul class="filter-for-grid feedback">
               <li>
                 <input id="mayday" type="radio" name="grid" value="#" class="radio-off-on" hidden checked>
                 <label for="mayday" class="filter-label">
@@ -119,49 +119,55 @@
             </ul>
           </div>
           <div class="features-filter">
-          <span class="filter-title">
-           Особенности:
-          </span>
-            <ul class="filter-of-features">
+            <span class="filter-title">
+              Особенности:
+            </span>
+            <ul class="filter-of-features feedback">
               <li>
                 <label class="filter-label-second">
                   <input type="checkbox" name="#" class="checkbox" hidden checked>
-                  <span class="span">Слайдер</span>
+                  <span class="span">
+                    Слайдер
+                  </span>
                 </label>
               </li>
               <li>
                 <label class="filter-label-second">
                   <input type="checkbox" name="#" class="checkbox" hidden>
-                  <span class="span">Блок преимуществ</span>
+                  <span class="span">
+                    Блок преимуществ
+                  </span>
                 </label>
               </li>
               <li>
                 <label class="filter-label-second">
                   <input type="checkbox" name="#" class="checkbox" hidden checked>
-                  <span class="span">Новости</span>
+                  <span class="span">
+                    Новости
+                  </span>
                 </label>
               </li>
               <li>
                 <label class="filter-label-second">
                   <input type="checkbox" name="#" class="checkbox" hidden>
-                  <span class="span">Галерея</span>
+                  <span class="span">
+                    Галерея
+                  </span>
                 </label>
               </li>
               <li>
                 <label class="filter-label-second">
                   <input type="checkbox" name="#" class="checkbox" hidden>
-                  <span class="span">Корзина</span>
+                  <span class="span">
+                    Корзина
+                  </span>
                 </label>
               </li>
             </ul>
           </div>
-          <div>
-            <a href="#" class="button-filter">
-             <span>
-               Показать
-             </span>
-            </a>
-          </div>
+          <label>
+            <input type="submit" class="button-filter" name="button" value="показать">
+          </label>
         </form>
       </div>
       <div class="catalog-right-block">
@@ -172,21 +178,21 @@
           <div class="string-of-hidden-input">
             <label class="input-sort">
               <input type="radio" hidden>
-              <span class="sort-string-hidden-input">
-              по цене
-            </span>
+              <span class="sort-string-hidden-input current-sort-type">
+                по цене
+              </span>
             </label>
             <label class="input-sort">
               <input type="radio" hidden>
               <span class="sort-string-hidden-input">
-              по типу
-            </span>
+                по типу
+              </span>
             </label>
             <label class="input-sort">
               <input type="radio" hidden>
               <span class="sort-string-hidden-input">
-              по названию
-            </span>
+                по названию
+              </span>
             </label>
             <label class="input-sort">
               <input type="radio" hidden>
@@ -200,182 +206,207 @@
         </div>
         <div class="catalog-goods">
           <div class="catalog-cart">
-            <div class="hover-block-container">
-              <div class="hover-block">
-                <div class="card-popup-title">
-                  Sedona
-                </div>
-                <div class="card-popup-text">
-                  Информационный сайт
-                  для туристов
-                </div>
-                <div class="card-popup-price">
-                  <a href="#" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </div>
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
               </div>
             </div>
             <a href="">
-              <img src="./img/sedona.jpg" alt="">
+              <img src="./img/sedona.jpg" alt="тут Sedona" width="360" height="576">
             </a>
-          </div>
-          <!--
-          <div class="catalog-cart">
             <div class="hover-block">
-              <ul class="web-hover-list">
-                <li>
+              <div class="card-popup-title">
+                <a href="" class="link-title-card">
+                  Sedona
+                </a>
+              </div>
+              <div class="card-popup-text">
+                Информационный сайт для туристов
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-cart">
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
+              </div>
+            </div>
+            <a href="">
+              <img src="./img/pink.jpg" alt="" width="360" height="576">
+            </a>
+            <div class="hover-block">
+              <div class="card-popup-title">
+                <a href="#" class="link-title-card">
                   Pink App
-                </li>
-                <li class="web-desc">
-                  <span>
-                    Продуктовый лендинг
-                  </span>
-                  <span>
-                   приложения для iOS и Android
-                  </span>
-                </li>
-                <li>
-                  <a href="#" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </li>
-              </ul>
+                </a>
+              </div>
+              <div class="card-popup-text">
+                Продуктовый лендинг приложения для iOS и Android
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
             </div>
-            <a href="">
-              <img src="./img/pink.jpg" alt="">
-            </a>
           </div>
           <div class="catalog-cart">
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
+              </div>
+            </div>
+            <a href="">
+              <img src="./img/barbershop.jpg" alt="" width="360" height="576">
+            </a>
             <div class="hover-block">
-              <ul class="web-hover-list">
-                <li>
+              <div class="card-popup-title">
+                <a href="#" class="link-title-card">
                   Barbershop
-                </li>
-                <li class="web-desc">
-                  <span>
-                    Сайт салона красоты.
-                  </span>
-                  <span>
-                    Для мужчин, да.
-                  </span>
-                </li>
-                <li>
-                  <a href="#" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </li>
-              </ul>
+                </a>
+              </div>
+              <div class="card-popup-text">
+                <span>
+                  Сайт салона красоты.
+                </span>
+                <span>
+                  Для мужчин, да.
+                </span>
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
             </div>
-            <a href="">
-              <img src="./img/barbershop.jpg" alt="">
-            </a>
           </div>
           <div class="catalog-cart">
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
+              </div>
+            </div>
+            <a href="">
+              <img src="./img/mishka.jpg" alt="" width="360" height="576">
+            </a>
             <div class="hover-block">
-              <ul class="web-hover-list">
-                <li>
+              <div class="card-popup-title">
+                <a href="" class="link-title-card">
                   MISHKA
-                </li>
-                <li class="web-desc">
-                  <span>
-                    Интернет-магазин
-                  </span>
-                  <span>
-                    вязаных игрушек
-                  </span>
-                </li>
-                <li>
-                  <a href="" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </li>
-              </ul>
+                </a>
+              </div>
+              <div class="card-popup-text mishka">
+                Интернет-магазин вязаных игрушек
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
             </div>
-            <a href="">
-              <img src="./img/mishka.jpg" alt="">
-            </a>
           </div>
           <div class="catalog-cart">
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
+              </div>
+            </div>
+            <a href="">
+              <img src="./img/aplus.jpg" alt="" width="360" height="576">
+            </a>
             <div class="hover-block">
-              <ul class="web-hover-list">
-                <li>
+              <div class="card-popup-title">
+                <a href="#" class="link-title-card">
                   A Plus
-                </li>
-                <li class="web-desc">
-                  <span>
-                   Лендинг курсов повышения
-                  </span>
-                  <span>
-                     квалификации
-                  </span>
-                </li>
-                <li>
-                  <a href="" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </li>
-              </ul>
+                </a>
+              </div>
+              <div class="card-popup-text">
+                Лендинг курсов повышения квалификации
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
             </div>
-            <a href="">
-              <img src="./img/aplus.jpg" alt="">
-            </a>
           </div>
           <div class="catalog-cart">
-            <div class="hover-block">
-              <ul class="web-hover-list">
-                <li>
-                  КВАСТ
-                </li>
-                <li class="web-desc">
-                  <span>
-                   Промо-сайт производителя
-                  </span>
-                  <span>
-                    крафтового кваса
-                  </span>
-                </li>
-                <li>
-                  <a href="" class="hover-block-button">
-                    9 900 руб.
-                  </a>
-                </li>
-              </ul>
+            <div class="top-card-decoration white-circle">
+              <div class="white-circle-first">
+              </div>
+              <div class="white-circle-second">
+              </div>
+              <div class="white-circle-third">
+              </div>
             </div>
             <a href="">
-              <img src="./img/kvass.jpg" alt="">
+              <img src="./img/kvass.jpg" alt="" width="360" height="576">
             </a>
+            <div class="hover-block">
+              <div class="card-popup-title">
+                <a href="#" class="link-title-card">
+                  КВАСТ
+                </a>
+              </div>
+              <div class="card-popup-text">
+                Промо-сайт производителя крафтового кваса
+              </div>
+              <div class="card-popup-price">
+                <a href="#" class="hover-block-button">
+                  9 900 руб.
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        -->
-        <div class="pagination">
-          <div class="pagination-item pagination-item-current">
-            <a href="">
-              <span>
-                1
-              </span>
-            </a>
-          </div>
-          <div class="pagination-item">
-            <a href="">
-              <span>
-                2
-              </span>
-            </a>
-          </div>
-          <div class="pagination-item">
-            <a href="">
-              <span>
-                3
-              </span>
-            </a>
-          </div>
-          <div class="button-next">
-            <a href="" class="pagination-button">
-              <span>
-                Следующая
-              </span>
-            </a>
+          <div class="pagination">
+            <div class="pagination-item pagination-item-current">
+              <a href="">
+                <span>
+                  1
+                </span>
+              </a>
+            </div>
+            <div class="pagination-item">
+              <a href="">
+                <span>
+                  2
+                </span>
+              </a>
+            </div>
+            <div class="pagination-item">
+              <a href="">
+                <span>
+                  3
+                </span>
+              </a>
+            </div>
+            <div class="button-next">
+              <a href="#" class="pagination-button">
+                <span>
+                  Следующая
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -388,28 +419,26 @@
           <h3 class="popup-title">
             Напишите нам
           </h3>
-          <ul class="form-submit">
+          <ul class="form-submit feedback">
             <li class="input-string">
               <div>
                 <label for="name">
                   Ваше имя
                 </label>
-                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                <input id="name" type="text" name="name" placeholder="Имя Фамилия" class="popup-placeholder-padding">
               </div>
               <div>
                 <label for="email">
                   Ваш e-mail
                 </label>
-                <input id="email" type="email" name="e-mail" placeholder="askerbl67@gmail.com">
+                <input id="email" type="email" name="e-mail" placeholder="askerbl67@gmail.com" class="popup-placeholder-padding">
               </div>
             </li>
             <li>
               <label for="text-latter">
                 Текст письма:
               </label>
-              <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
-                        class="textarea-popup">
-              </textarea>
+              <textarea id="text-latter" name="text-latter" placeholder="В свободной форме" class="textarea-popup textarea-placeholder-padding"></textarea>
             </li>
             <li>
               <label>
@@ -433,19 +462,19 @@
       <h3 class="write-us-block-title">
         NЁRDS DESIGN STUDIO
       </h3>
-      <ul class="write-us-block-adress">
+      <ul class="write-us-block-adress feedback">
         <li class="address">
-            <span>
-          191186, Санкт-Петербург,
-            </span>
           <span>
-          ул. Б. Конюшенная, д. 19/8
-        </span>
+            191186, Санкт-Петербург,
+          </span>
+          <span>
+            ул. Б. Конюшенная, д. 19/8
+          </span>
         </li>
         <li>
-            <span>
+          <span>
             тел. +7 (812) 275-75-75
-            </span>
+          </span>
         </li>
         <li>
           <a href="#" class="write-us-button">
@@ -454,16 +483,14 @@
         </li>
       </ul>
     </div>
-    <iframe
-      src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;
-      source=constructor" frameborder="0">
+    <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor">
     </iframe>
   </div>
 </main>
 <footer>
   <div class="container">
     <div class="social-media-footer">
-      <ul class="socials">
+      <ul class="socials feedback">
         <li class="footer-social-link">
           <a href="https://www.facebook.com/">
             <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук">
@@ -481,12 +508,12 @@
         </li>
       </ul>
       <div class="offer">
-      <span>
-        Давайте дружить, это выгодно!
-      </span>
         <span>
-        Скидка 10% для друзей из социальных сетей.
-      </span>
+          Давайте дружить, это выгодно!
+        </span>
+        <span>
+          Скидка 10% для друзей из социальных сетей.
+        </span>
       </div>
     </div>
   </div>
