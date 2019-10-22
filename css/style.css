@@ -567,7 +567,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   font-weight: 700;
-  line-height: 10.06px;
+  line-height: 36px;
   position: relative;
   transform: translateX(35px);
 }
@@ -576,10 +576,10 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
-  line-height: 10.06px;
   position: absolute;
   margin: 0;
   padding: 0;
+  line-height: 36px;
 }
 
 .our-promise-top li:nth-child(2) {
@@ -941,15 +941,11 @@ body {
 
 .social-media-footer {
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 69px;
+  padding-bottom: 69px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #efc84a;
-}
-
-.socials {
-  background-color: #00ca74;
 }
 
 .socials li {
