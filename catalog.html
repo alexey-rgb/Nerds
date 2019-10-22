@@ -99,19 +99,19 @@
             </span>
             <ul class="filter-for-grid feedback">
               <li>
-                <input id="mayday" type="radio" name="grid" value="#" class="radio-off-on" hidden checked>
+                <input id="mayday" type="radio" name="grid-type" value="adaptive-grid" class="radio-off-on" hidden checked>
                 <label for="mayday" class="filter-label">
                   Адаптивная
                 </label>
               </li>
               <li>
-                <input id="mayday-second" type="radio" name="grid" value="#" class="radio-off-on" hidden>
+                <input id="mayday-second" type="radio" name="grid-type" value="fix-grid" class="radio-off-on" hidden>
                 <label for="mayday-second" class="filter-label">
                   Фиксированная
                 </label>
               </li>
               <li>
-                <input id="mayday-third" type="radio" name="grid" value="#" class="radio-off-on" hidden>
+                <input id="mayday-third" type="radio" name="grid-type" value="rubber-grid" class="radio-off-on" hidden>
                 <label for="mayday-third" class="filter-label">
                   Резиновая
                 </label>
@@ -125,7 +125,7 @@
             <ul class="filter-of-features feedback">
               <li>
                 <label class="filter-label-second">
-                  <input type="checkbox" name="#" class="checkbox" hidden checked>
+                  <input type="checkbox" name="features" class="checkbox" value="slider" hidden checked>
                   <span class="span">
                     Слайдер
                   </span>
@@ -133,7 +133,7 @@
               </li>
               <li>
                 <label class="filter-label-second">
-                  <input type="checkbox" name="#" class="checkbox" hidden>
+                  <input type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
                   <span class="span">
                     Блок преимуществ
                   </span>
@@ -141,7 +141,7 @@
               </li>
               <li>
                 <label class="filter-label-second">
-                  <input type="checkbox" name="#" class="checkbox" hidden checked>
+                  <input type="checkbox" name="features" class="checkbox" value="news-block" hidden checked>
                   <span class="span">
                     Новости
                   </span>
@@ -149,7 +149,7 @@
               </li>
               <li>
                 <label class="filter-label-second">
-                  <input type="checkbox" name="#" class="checkbox" hidden>
+                  <input type="checkbox" name="features" class="checkbox" value="galery-block" hidden>
                   <span class="span">
                     Галерея
                   </span>
@@ -157,7 +157,7 @@
               </li>
               <li>
                 <label class="filter-label-second">
-                  <input type="checkbox" name="#" class="checkbox" hidden>
+                  <input type="checkbox" name="features" class="checkbox" value="cart-block" hidden>
                   <span class="span">
                     Корзина
                   </span>
@@ -166,41 +166,43 @@
             </ul>
           </div>
           <label>
-            <input type="submit" class="button-filter" name="button" value="показать">
+            <button type="submit" class="button-filter" name="button" value="button">
+              показать
+            </button>
           </label>
         </form>
       </div>
       <div class="catalog-right-block">
         <div class="sort-string">
           <h2 class="sort-title">
-            Сортировать
+            Сортировать:
           </h2>
           <div class="string-of-hidden-input">
             <label class="input-sort">
-              <input type="radio" hidden>
-              <span class="sort-string-hidden-input current-sort-type">
+              <input type="radio" name="1" hidden checked>
+              <span class="sort-string-hidden-input">
                 по цене
               </span>
             </label>
             <label class="input-sort">
-              <input type="radio" hidden>
+              <input type="radio" name="1" hidden>
               <span class="sort-string-hidden-input">
                 по типу
               </span>
             </label>
             <label class="input-sort">
-              <input type="radio" hidden>
+              <input type="radio" name="1" hidden>
               <span class="sort-string-hidden-input">
                 по названию
               </span>
             </label>
             <label class="input-sort">
-              <input type="radio" hidden>
-              <img src="img/icon-down.png" alt="" class="sort-string-hidden-input">
+              <input type="radio" name="icon" hidden checked>
+              <img src="img/svg-nerds/icon-down.svg" alt="стрелка вниз">
             </label>
             <label class="input-sort">
-              <input type="radio" hidden>
-              <img src="img/icon-down.png" alt="" class="icon-down-sort-string sort-string-hidden-input">
+              <input type="radio" name="icon" hidden>
+              <img src="img/svg-nerds/icon-up.svg" alt="стрелка наверх">
             </label>
           </div>
         </div>
@@ -414,7 +416,7 @@
   </div>
   <div class="map">
     <div class="container-popup show-popup">
-      <form action="#" method="post" class="popup-form">
+      <form action="https://echo.htmlacademy.ru" method="post" class="popup-form">
         <fieldset class="popup">
           <h3 class="popup-title">
             Напишите нам
@@ -442,7 +444,9 @@
             </li>
             <li>
               <label>
-                <input type="submit" name="send" class="send-button">
+                <button type="submit" name="send" class="send-button">
+                  Отправить
+                </button>
               </label>
             </li>
             <li>

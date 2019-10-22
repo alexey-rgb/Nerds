@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Roboto Medium"), url("../font/Roboto-Medium.woff2") format("woff2");
+  src: local("Roboto-Medium"), url("../font/Roboto-Medium.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -23,7 +23,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto Bold"), url("../font/Roboto-Bold.woff2") format("woff2");
+  src: local("Roboto-Bold"), url("../font/Roboto-Bold.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -159,17 +159,21 @@ body {
   width: 400px;
   list-style: none;
   padding: 0 10px;
+}
+
+.header-navigation-item li {
   position: relative;
 }
 
 .header-navigation-item .link-header-current::after {
   content: "";
   position: absolute;
-  width: 83px;
+  width: 100%;
   height: 2px;
   background-color: #d7373b;
-  right: 30%;
-  top: 30px;
+  right: 1%;
+  bottom: -12px;
+  transform: translateX(1px);
 }
 
 .link-header {
@@ -217,6 +221,7 @@ body {
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
+  background-color: #00bc6c;
 }
 
 .slider-controls label {
@@ -228,9 +233,22 @@ body {
   border-radius: 50%;
   cursor: pointer;
   vertical-align: top;
+  background-color: #efc84a;
 }
 
-.slider-controls label::after {
+.slider-controls label:first-child::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controls label:nth-child(2)::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -633,12 +651,20 @@ body {
   opacity: 0.1;
 }
 
-.brands-string li:nth-of-type(2),
-.brands-string li:nth-of-type(4),
-.brands-string li:nth-of-type(6) {
+.brands-list li {
+  position: relative;
+}
+
+.brands-list li:nth-child(4)::before,
+.brands-list li:nth-child(2)::before,
+.brands-list li:nth-child(3)::before {
+  display: inline-block;
+  content: "";
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+  position: absolute;
+  transform: translate(-60px, 10px);
 }
 
 /* Карта*/
@@ -741,7 +767,7 @@ body {
     margin-left: 100%;
   }
   to {
-    margin-left: 300px;
+    margin-left: 0;
   }
 }
 
@@ -823,6 +849,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .textarea-popup {
@@ -1155,8 +1182,10 @@ input[type=radio] + label::before {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.png");
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: 3px solid #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
   position: absolute;
   transform: translate(-10%, -10%);
 }
@@ -1166,10 +1195,23 @@ input[type=radio]:checked + label::before {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-on.png");
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: 3px solid #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
   position: absolute;
-  transform: translate(-10%, -10%);
+}
+
+input[type=radio]:checked + label::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(49%, -148%);
 }
 
 input[type=radio]:disabled + label::before {
@@ -1177,10 +1219,34 @@ input[type=radio]:disabled + label::before {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.png");
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: 3px solid #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
   position: absolute;
   transform: translate(-10%, -10%);
+}
+
+input[type=radio]:disabled + label::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
+  position: absolute;
+}
+
+input[type=radio]:hover + label::before {
+  opacity: 1;
+}
+
+input[type=radio]:checked:hover + label::before {
+  opacity: 1;
+}
+input[type=radio]:checked:hover + label::after {
+  opacity: 1;
 }
 
 input[type=checkbox] + span::before {
@@ -1188,9 +1254,10 @@ input[type=checkbox] + span::before {
   display: block;
   width: 25px;
   height: 25px;
+  opacity: 0.4;
   background-image: url("../img/checkbox-off.png");
-  background-repeat: no-repeat;
   position: absolute;
+  background-repeat: no-repeat;
   transform: translate(-10%, -10%);
 }
 
@@ -1199,6 +1266,7 @@ input[type=checkbox]:checked + span::before {
   display: block;
   width: 25px;
   height: 25px;
+  opacity: 0.4;
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -1214,6 +1282,14 @@ input[type=checkbox]:disabled + span::before {
   background-repeat: no-repeat;
   position: absolute;
   transform: translate(-10%, -10%);
+}
+
+input[type=checkbox]:hover + span::before {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked:hover + span::before {
+  opacity: 1;
 }
 
 .span {
@@ -1293,40 +1369,39 @@ input[type=checkbox]:disabled + span::before {
   text-transform: uppercase;
 }
 
-.input-sort {
+.input-sort span {
   cursor: pointer;
-}
-
-.string-of-hidden-input label:nth-child(4) {
-  transform: translateX(15px);
-}
-
-.icon-down-sort-string {
-  transform: rotate(58deg);
-}
-
-.sort-string-hidden-input {
   opacity: 0.3;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
 }
 
-.current-sort-type {
-  opacity: 1;
+.string-of-hidden-input label:nth-child(4) {
+  transform: translateX(15px);
 }
 
-input[type=radio]:hover + .sort-string-hidden-input {
+input[type=radio]:hover + span {
   opacity: 0.6;
 }
 
-input[type=radio]:checked:active + .sort-string-hidden-input {
+input[type=radio]:checked + span {
   opacity: 1;
 }
 
-input[type=radio]:checked + .sort-string-hidden-input {
+.input-sort img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+input[type=radio]:hover + img {
+  opacity: 0.6;
+}
+
+input[type=radio]:checked + img {
   opacity: 1;
 }
 
