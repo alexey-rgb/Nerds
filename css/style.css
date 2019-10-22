@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto"), url("../font/Roboto.woff2") format("woff2");
+  src: local("Roboto"), url("../font/Roboto2.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -480,7 +480,7 @@ body {
   justify-content: space-between;
 }
 
-.about-us span {
+.about-us {
   display: block;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
@@ -538,7 +538,7 @@ body {
 
 .about-us-logo {
   text-align: center;
-  margin: 0;
+  margin-left: 40px;
   padding: 0;
   background-color: #eeeeee;
   width: 360px;
