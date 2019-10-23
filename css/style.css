@@ -115,7 +115,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: aqua;
 }
 
 /* Главная */
@@ -157,7 +156,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  background-color: #efc84a;
   margin-left: 160px;
 }
 
