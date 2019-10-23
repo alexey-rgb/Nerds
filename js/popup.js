@@ -1,19 +1,14 @@
-var button = document.querySelector(".write-us-button");
+var button_show_popup = document.querySelector(".write-us-button");
 var popup = document.querySelector(".container-popup");
-var closeform = document.querySelector(".close-popup");
-var d = document.querySelector("[name=name]");
-var e = document.querySelector("[name=e-mail]");
+var close_form = document.querySelector(".close-popup");
+var input_name = document.querySelector("[name=name]");
 popup.classList.remove("show-popup");
-button.addEventListener("click", function (evt) {
+button_show_popup.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("show-popup");
-  d.focus();
-  if (d.value) {
-    evt.preventDefault();
-    e.focus();
-  }
+  input_name.focus();
 });
-closeform.addEventListener("click", function (evt) {
+close_form.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("show-popup");
 });

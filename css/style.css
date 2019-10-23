@@ -124,6 +124,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 545px;
   /* background-color: #00ca74;*/
 }
 
@@ -131,8 +132,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 49px;
-  margin-bottom: 18px;
+  margin-top: 50px;
+  margin-bottom: 8px;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -280,15 +281,16 @@ body {
 }
 
 .slider-item {
+  min-height: 413px;
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 60px 0;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/first-slide.png");
   background-size: 698px 413px;
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: left 93% bottom 4%;
 }
 
 .slider-item:nth-child(2) {
@@ -354,7 +356,7 @@ body {
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -404,7 +406,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 18px 0;
+  margin: 17px 0;
 }
 
 .cart-text-index {
@@ -488,7 +490,7 @@ body {
   justify-content: space-between;
   border-top: 2px solid #eeeeee;
   padding-top: 40px;
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
 .about-us-left-column {
@@ -501,10 +503,8 @@ body {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-}
-
-.about-us {
   margin-bottom: 35px;
+  margin-top: 35px;
 }
 
 .slogan span {
@@ -516,20 +516,33 @@ body {
 }
 
 .slogan {
-  margin-bottom: 47px;
+  margin-bottom: 39px;
+}
+
+.opportunities-list {
+  margin-top: 22px;
+  margin-bottom: 0;
+  padding-left: 37px;
+}
+
+.opportunities-list li {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .opportunities-list li:before {
   display: block;
   content: "";
-  width: 20px;
+  width: 24px;
   height: 2px;
   background: #fb565a;
-  transform: translate(-25px, 11px);
+  transform: translate(-35px, 13px);
 }
 
-.opportunities-list li {
-  margin-bottom: 20px;
+.opportunities-list li:nth-of-type(2) {
+  margin: 23px 0;
 }
 
 .list-of-services-title {
@@ -540,21 +553,15 @@ body {
   text-transform: uppercase;
 }
 
-.opportunities-list span {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .about-us-right-column {
   display: flex;
   flex-direction: column;
+  width: 370px;
 }
 
 .about-us-logo {
   text-align: center;
-  margin-left: 40px;
+  margin-left: auto;
   padding: 0;
   background-color: #eeeeee;
   width: 360px;
@@ -562,30 +569,32 @@ body {
 }
 
 .about-us-right-column p {
-  width: 450px;
+  width: 100%;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
-  padding: 0;
-  margin: 40px 0 45px 0;
+  padding-left: 25px;
+  margin: 39px 0 45px 0;
 }
 
 .our-promise-top {
-  width: 350px;
+  width: 348px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   font-weight: 700;
   line-height: 36px;
   position: relative;
-  transform: translateX(35px);
+}
+
+.our-promise-top li:nth-of-type(2) {
+  padding: 0 30px;
 }
 
 .our-promise-top sup {
@@ -612,8 +621,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 26px 0 0 0;
-  transform: translateX(35px);
+  margin: 25px 0 0 10px;
 }
 
 .our-promise-bottom span {
@@ -635,9 +643,9 @@ body {
   justify-content: space-between;
   min-height: 90px;
   list-style: none;
-  margin: 76px 0 80px 0;
+  margin: 76px 0 73px 0;
   padding: 0;
-  width: 1160px;
+  width: 1119px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -656,7 +664,23 @@ body {
 
 .brands-list li {
   position: relative;
-  padding: 46px 0;
+  padding: 40px 0;
+}
+
+.brands-list li:first-child {
+  transform: translate(30px, 20px);
+}
+
+.brands-list li:nth-child(3) {
+  transform: translate(-5px, 20px);
+}
+
+.brands-list li:nth-child(2) {
+  transform: translateX(10px);
+}
+
+.brands-list li:nth-child(4) {
+  transform: translateY(10px);
 }
 
 .brands-list li:nth-child(4)::before,
