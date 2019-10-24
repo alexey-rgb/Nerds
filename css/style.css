@@ -1202,6 +1202,7 @@ body {
   margin-top: 19px;
   padding-left: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-for-grid li:nth-of-type(2){
@@ -1212,6 +1213,7 @@ body {
 
 .filter-label {
   padding-left: 36px;
+  cursor: pointer;
 }
 
 input[type=radio] + label::before {
@@ -1248,7 +1250,7 @@ input[type=radio]:checked + label::after {
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-  transform: translate(67%, -148%);
+  transform: translate(61%, -150%);
 }
 
 input[type=radio]:disabled + label::before {
@@ -1335,6 +1337,10 @@ input[type=checkbox]:checked:hover + span::before {
 
 .grid-filter {
   margin-bottom: 47px;
+}
+
+.filter-label-second {
+  cursor: pointer;
 }
 
 .filter-title {
