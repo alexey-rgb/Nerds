@@ -54,6 +54,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  position: relative;
 }
 
 .visually-hidden {
@@ -383,7 +384,6 @@ body {
 /* main*/
 
 .advantages {
-  width: 1100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -701,6 +701,12 @@ body {
   padding: 0;
 }
 
+.map-marker {
+  position: absolute;
+  left: 55%;
+  bottom: 31%;
+}
+
 .yandex-map {
   width: 100%;
   min-height: 416px;
@@ -710,11 +716,6 @@ body {
   background-color: #eeeeee;
 }
 
-.map-marker {
-  position: absolute;
-  left: 55%;
-  bottom: 31%;
-}
 
 /* блок на карте и попап */
 
@@ -724,7 +725,23 @@ body {
   background-color: #ffffff;
   position: absolute;
   left: 20%;
-  bottom: 54px;
+  bottom: 11%;
+  transform: translate(7px, -10px);
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #666666;
+}
+
+.write-us-block-catalog {
+  width: 319px;
+  min-height: 308px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 10%;
+  bottom: 9%;
+  transform: translate(64%, 2%);
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1053,7 +1070,7 @@ body {
   margin-right: 140px;
 }
 
-.filter input:not(.button-filter) {
+.filter input:not(.input-value) {
   width: 25px;
   min-height: 25px;
   background-color: #4d4d4d;
@@ -1067,7 +1084,7 @@ body {
   background-color: #eeeeee;
   position: relative;
   margin-top: 44px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -1147,17 +1164,9 @@ body {
   cursor: pointer;
 }
 
-.container-price-reference {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 59px;
-}
+.container-price-value {
 
-.max-value {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-bottom: 59px;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1165,23 +1174,22 @@ body {
   text-transform: uppercase;
 }
 
-.background-price-reference {
-  width: 80px;
-  min-height: 38px;
-  background-color: #eeeeee;
-  margin-left: 11px;
+.container-price-value label:last-child {
+  margin-left: 34px;
 }
 
-.output-max {
+.input-value {
   left: 0;
   top: 0;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 38px;
   border: none;
   opacity: 1;
   text-align: center;
   margin: 0;
+  background-color: #eeeeee;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .min-value {
