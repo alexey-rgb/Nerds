@@ -1,29 +1,29 @@
 /* Шрифты */
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto"), url("../font/Roboto.woff2") format("woff2");
+  src: local("roboto"), url("../font/roboto.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Roboto-Medium"), url("../font/Roboto-Medium.woff2") format("woff2");
+  src: local("roboto-Medium"), url("../font/roboto-Medium.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto-Bold"), url("../font/Roboto-Bold.woff2") format("woff2");
+  src: local("roboto-Bold"), url("../font/roboto-Bold.woff2") format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -48,7 +48,7 @@ html {
 body {
   min-width: 1200px;
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -81,9 +81,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 54px;
+  padding-top: 52px;
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -96,7 +96,7 @@ body {
   margin-top: 67px;
   padding: 0;
   text-align: center;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -133,9 +133,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 8px;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -194,7 +193,7 @@ body {
 }
 
 .cart img {
-  padding-right: 26px;
+  padding-right: 21px;
   cursor: pointer;
 }
 
@@ -211,7 +210,7 @@ body {
 .slider {
   position: relative;
   width: 100%;
-  margin: 0;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -337,7 +336,7 @@ body {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -347,7 +346,7 @@ body {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -361,7 +360,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -387,21 +386,22 @@ body {
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 80px;
 }
 
 .advantages-block {
+  margin-top: 80px;
+  margin-right: 100px;
   width: 300px;
   min-height: 347px;
 }
 
 .advantages-block:nth-child(3n+3) {
   margin: 0;
+  margin-top: 80px;
 }
 
 .cart-title-index {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -410,7 +410,7 @@ body {
 }
 
 .cart-text-index {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -428,7 +428,7 @@ body {
   display: block;
   background-color: #fb565a;
   color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -499,7 +499,7 @@ body {
 
 .about-us {
   display: block;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -509,7 +509,7 @@ body {
 
 .slogan span {
   display: block;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -526,7 +526,7 @@ body {
 }
 
 .opportunities-list li {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -546,7 +546,7 @@ body {
 }
 
 .list-of-services-title {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -570,7 +570,7 @@ body {
 
 .about-us-right-column p {
   width: 100%;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -586,7 +586,7 @@ body {
   justify-content: space-between;
   margin: 0 10px;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 45px;
   font-weight: 700;
   line-height: 36px;
@@ -598,7 +598,7 @@ body {
 }
 
 .our-promise-top sup {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
   position: absolute;
@@ -608,7 +608,7 @@ body {
 }
 
 .our-promise-top li:nth-child(2) {
-  transform: translateX(-35px);
+  transform: translateX(-29px);
 }
 
 .our-promise-top li:nth-child(3) {
@@ -629,7 +629,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -644,7 +644,7 @@ body {
   min-height: 90px;
   list-style: none;
   margin: 76px 0 73px 0;
-  padding: 0;
+  padding: 40px 0;
   width: 1119px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -664,7 +664,6 @@ body {
 
 .brands-list li {
   position: relative;
-  padding: 40px 0;
 }
 
 .brands-list li:first-child {
@@ -726,7 +725,7 @@ body {
   position: absolute;
   left: 20%;
   bottom: 54px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -737,7 +736,7 @@ body {
   margin-top: 46px;
   margin-left: 40px;
   margin-bottom: 25px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -760,7 +759,7 @@ body {
   background-color: #fb565a;
   color: #ffffff;
   border-radius: 2px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -814,7 +813,7 @@ body {
 
 .popup-title {
   width: 320px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -830,7 +829,7 @@ body {
 
 .form-submit label {
   display: table;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
@@ -848,7 +847,7 @@ body {
   background-color: #ffffff;
   opacity: 0.5;
   color: #444444;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -874,7 +873,7 @@ body {
   border: none;
   border-radius: 2px;
   outline: none;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -889,7 +888,7 @@ body {
   margin-bottom: 47px;
   opacity: 0.5;
   color: #444444;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1015,7 +1014,7 @@ body {
 .offer span:nth-child(1) {
   padding: 0;
   display: block;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -1024,7 +1023,7 @@ body {
 
 .offer span:nth-of-type(2) {
   color: #444444;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1039,7 +1038,7 @@ body {
   justify-content: space-between;
   margin: 57px 0;
   color: #283136;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1155,12 +1154,34 @@ body {
   margin-bottom: 59px;
 }
 
+.max-value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
 .background-price-reference {
   width: 80px;
   min-height: 38px;
   background-color: #eeeeee;
-  position: relative;
   margin-left: 11px;
+}
+
+.output-max {
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 1;
+  text-align: center;
+  margin: 0;
 }
 
 .min-value {
@@ -1168,34 +1189,24 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   text-transform: uppercase;
-}
-
-.max-value {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-
-.output-max {
-  position: absolute;
-  left: 15px;
-  top: 9px;
+  position: relative;
 }
 
 .output-min {
   position: absolute;
   left: 35px;
   top: 9px;
+  border: none;
+  background-color: #eeeeee;
+
+  width: 80px;
+  min-height: 38px;
+  margin-left: 11px;
 }
 
 .filter-of-features li {
@@ -1344,10 +1355,10 @@ input[type=checkbox]:checked:hover + span::before {
 }
 
 .filter-title {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
@@ -1358,7 +1369,7 @@ input[type=checkbox]:checked:hover + span::before {
   border-radius: 2px;
   cursor: pointer;
   margin-top: 35px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1407,7 +1418,7 @@ input[type=checkbox]:checked:hover + span::before {
   position: relative;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1415,7 +1426,7 @@ input[type=checkbox]:checked:hover + span::before {
 .input-sort span {
   cursor: pointer;
   opacity: 0.3;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1424,7 +1435,7 @@ input[type=checkbox]:checked:hover + span::before {
 }
 
 .string-of-hidden-input label:nth-child(4) {
-  transform: translateX(15px);
+  transform: translateX(11px);
 }
 
 input[type=radio]:hover + span {
@@ -1452,14 +1463,6 @@ input[type=radio]:checked + img {
   display: flex;
   flex-direction: column;
   margin: 0;
-}
-
-.sorting-string {
-  width: 780px;
-  min-height: 36px;
-  border: 2px solid black;
-  padding: 0 10px;
-  margin-bottom: 59px;
 }
 
 .catalog-goods {
@@ -1545,7 +1548,7 @@ input[type=radio]:checked + img {
 }
 
 .card-popup-title {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -1560,7 +1563,7 @@ input[type=radio]:checked + img {
 
 .card-popup-text {
   text-align: center;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1601,7 +1604,7 @@ input[type=radio]:checked + img {
   text-align: center;
   padding: 19px 20px 18px;
   color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1633,7 +1636,7 @@ input[type=radio]:checked + img {
   width: 260px;
   border-radius: 2px;
   display: block;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;

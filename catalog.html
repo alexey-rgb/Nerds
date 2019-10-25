@@ -58,6 +58,7 @@
         <span class="filter-title">
           Стоимость:
         </span>
+        <form action="https://echo.htmlacademy.ru" method="post">
         <div class="container-input-range">
           <div class="row">
             <div class="line">
@@ -74,23 +75,18 @@
               от
             </span>
             <div class="background-price-reference">
-              <output class="output-min">
-                0
-              </output>
+              <label>
+              <input type="text" name="price-ref" value="0" size="5" style="width: 80px; min-height: 38px; text-align: center; border: none; background: #eeeeee; outline: none">
+              </label>
             </div>
           </div>
-          <div class="max-value">
-            <span>
-              до
-            </span>
-            <div class="background-price-reference">
-              <output class="output-max">
-                15000
-              </output>
+          <div class="background-price-reference">
+                <label>
+                  до
+                <input class="output-max" name="price-ref" value="15000">
+              </label>
             </div>
           </div>
-        </div>
-        <form action="https://echo.htmlacademy.ru" method="post">
           <div class="grid-filter">
             <span class="filter-title">
               Сетка:
