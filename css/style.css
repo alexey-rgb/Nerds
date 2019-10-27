@@ -810,9 +810,11 @@ body {
   min-height: 308px;
   background-color: #ffffff;
   position: absolute;
-  left: 20%;
+  left: 19%;
   bottom: 12%;
-  /* transform: translateX(6%);*/
+  -webkit-transform: translateX(6%);
+  -ms-transform: translateX(6%);
+  transform: translateX(6%);
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1624,7 +1626,7 @@ input[type=radio]:checked + img {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  /*width: 760px;*/
+  width: calc(100% - 261px);
 }
 
 .catalog-goods {
@@ -1635,7 +1637,14 @@ input[type=radio]:checked + img {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+
+.catalog-goods .catalog-cart {
+  margin-right: 39px;
+}
+
+.catalog-goods .catalog-cart:nth-of-type(2n+2) {
+  margin-right: 0;
 }
 
 .catalog-cart {
