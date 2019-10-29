@@ -6,7 +6,7 @@
     Каталог
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="css/styles-min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header-catalog">
@@ -14,7 +14,7 @@
     <div class="header-top-string-catalog">
       <div class="logo">
         <a href="index.html">
-          <img src="img/nerds-logo.png" alt="Логотип Нердс" width="160" height="65">
+          <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65">
         </a>
       </div>
       <ul class="header-navigation-item feedback">
@@ -41,7 +41,7 @@
       </ul>
       <div class="cart">
         <a href="" class="link-header">
-          <img src="img/svg-nerds/cart-icon.svg" alt="тут корзина">
+          <img src="img/svg-nerds/cart-icon.svg" alt="корзина" width="15" height="15">
           Корзина
         </a>
       </div>
@@ -85,20 +85,19 @@
             </span>
             <ul class="filter-for-grid feedback">
               <li>
-                <input id="mayday" type="radio" name="grid-type" value="adaptive-grid" class="radio-off-on" hidden
-                       checked>
+                <input id="mayday" type="radio" name="grid-type" value="adaptive-grid" hidden checked>
                 <label for="mayday" class="filter-label">
                   Адаптивная
                 </label>
               </li>
               <li>
-                <input id="mayday-second" type="radio" name="grid-type" value="fix-grid" class="radio-off-on" hidden>
-                <label for="mayday-second" class="filter-label">
+                <input id="mayday-second" type="radio" name="grid-type" value="fix-grid" class="fix" hidden disabled>
+                <label for="mayday-second" class="filter-label fix-label">
                   Фиксированная
                 </label>
               </li>
               <li>
-                <input id="mayday-third" type="radio" name="grid-type" value="rubber-grid" class="radio-off-on" hidden>
+                <input id="mayday-third" type="radio" name="grid-type" value="rubber-grid" hidden>
                 <label for="mayday-third" class="filter-label">
                   Резиновая
                 </label>
@@ -111,43 +110,33 @@
             </span>
             <ul class="filter-of-features feedback">
               <li>
-                <label class="filter-label-second">
-                  <input type="checkbox" name="features" class="checkbox" value="slider" hidden checked>
-                  <span class="span">
-                    Слайдер
-                  </span>
+                <input id="one" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden checked>
+                <label for="one" class="filter-label-second">
+                  Слайдер
                 </label>
               </li>
               <li>
-                <label class="filter-label-second">
-                  <input type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
-                  <span class="span">
-                    Блок преимуществ
-                  </span>
-                </label>
+                <input id="two" type="checkbox" name="features" class="checkbox disabled-text" value="advantages-block" hidden disabled>
+                <label for="two" class="filter-label-second">
+                Блок преимуществ
+              </label>
               </li>
               <li>
-                <label class="filter-label-second">
-                  <input type="checkbox" name="features" class="checkbox" value="news-block" hidden checked>
-                  <span class="span">
+                  <input id="three" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden checked>
+                  <label for="three" class="filter-label-second">
                     Новости
-                  </span>
+                  </label>
+              </li>
+              <li>
+                <input id="four" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
+                <label for="four" class="filter-label-second">
+                 Галерея
                 </label>
               </li>
               <li>
-                <label class="filter-label-second">
-                  <input type="checkbox" name="features" class="checkbox" value="galery-block" hidden>
-                  <span class="span">
-                    Галерея
-                  </span>
-                </label>
-              </li>
-              <li>
-                <label class="filter-label-second">
-                  <input type="checkbox" name="features" class="checkbox" value="cart-block" hidden>
-                  <span class="span">
-                    Корзина
-                  </span>
+                <input id="five" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
+                <label for="five" class="filter-label-second">
+                  Корзина
                 </label>
               </li>
             </ul>
@@ -166,47 +155,45 @@
           </h2>
           <div class="string-of-hidden-input">
             <label class="input-sort">
-              <input type="radio" name="1" hidden checked>
-              <span class="sort-string-hidden-input">
-                по цене
-              </span>
+              <input type="radio" name="1" hidden>
+                <a href="#" class="current-hidden-input">
+                  по цене
+                </a>
             </label>
             <label class="input-sort">
               <input type="radio" name="1" hidden>
-              <span class="sort-string-hidden-input">
-                по типу
-              </span>
+              <a href="#">
+                  по типу
+                </a>
             </label>
             <label class="input-sort">
               <input type="radio" name="1" hidden>
-              <span class="sort-string-hidden-input">
-                по названию
-              </span>
-            </label>
-            <label class="input-sort">
-              <input type="radio" name="icon" hidden checked>
-              <img src="img/svg-nerds/icon-down.svg" alt="стрелка вниз">
+                <a href="#">
+                  по названию
+                </a>
             </label>
             <label class="input-sort">
               <input type="radio" name="icon" hidden>
-              <img src="img/svg-nerds/icon-up.svg" alt="стрелка наверх">
+              <a href="#" class="current-hidden-input" aria-label="пo убыванию">
+                <img src="img/svg-nerds/icon-down.svg" alt="по убыванию" width="11" height="10">
+              </a>
+            </label>
+            <label class="input-sort">
+              <input type="radio" name="icon" hidden>
+              <a href="#" aria-label="по убыванию">
+                <img src="img/svg-nerds/icon-up.svg" alt="по возрастанию" width="11" height="10">
+              </a>
             </label>
           </div>
         </div>
         <div class="catalog-goods">
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/sedona.jpg" alt="тут Sedona" width="360" height="576">
+              <img src="./img/sedona.jpg" alt="Sedona" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -225,18 +212,12 @@
             </div>
           </div>
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/pink.jpg" alt="" width="360" height="576">
+              <img src="./img/pink.jpg" alt="Pink App" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -244,7 +225,7 @@
                   Pink App
                 </a>
               </div>
-              <div class="card-popup-text">
+              <div class="card-popup-text card-popup-text-long">
                 Продуктовый лендинг приложения для iOS и Android
               </div>
               <div class="card-popup-price">
@@ -255,18 +236,12 @@
             </div>
           </div>
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/barbershop.jpg" alt="" width="360" height="576">
+              <img src="./img/barbershop.jpg" alt="Barbershop" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -275,12 +250,7 @@
                 </a>
               </div>
               <div class="card-popup-text">
-                <span>
-                  Сайт салона красоты.
-                </span>
-                <span>
-                  Для мужчин, да.
-                </span>
+                Сайт салона красоты. Для мужчин, да.
               </div>
               <div class="card-popup-price">
                 <a href="#" class="hover-block-button">
@@ -290,18 +260,12 @@
             </div>
           </div>
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/mishka.jpg" alt="" width="360" height="576">
+              <img src="./img/mishka.jpg" alt="MISHKA" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -309,7 +273,7 @@
                   MISHKA
                 </a>
               </div>
-              <div class="card-popup-text mishka">
+              <div class="card-popup-text">
                 Интернет-магазин вязаных игрушек
               </div>
               <div class="card-popup-price">
@@ -320,18 +284,12 @@
             </div>
           </div>
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/aplus.jpg" alt="" width="360" height="576">
+              <img src="./img/aplus.jpg" alt="A Plus" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -339,7 +297,7 @@
                   A Plus
                 </a>
               </div>
-              <div class="card-popup-text">
+              <div class="card-popup-text card-popup-text-long">
                 Лендинг курсов повышения квалификации
               </div>
               <div class="card-popup-price">
@@ -350,18 +308,12 @@
             </div>
           </div>
           <div class="catalog-cart">
-            <div class="top-card-decoration white-circle">
-              <div class="white-circle-container">
-                <div class="white-circle-first">
-                </div>
-                <div class="white-circle-second">
-                </div>
-                <div class="white-circle-third">
-                </div>
+            <div class="top-card-decoration">
+              <div class="one-more-before">
               </div>
             </div>
             <a href="">
-              <img src="./img/kvass.jpg" alt="" width="360" height="576">
+              <img src="./img/kvass.jpg" alt="Кваст" width="360" height="576">
             </a>
             <div class="hover-block">
               <div class="card-popup-title">
@@ -369,7 +321,7 @@
                   КВАСТ
                 </a>
               </div>
-              <div class="card-popup-text">
+              <div class="card-popup-text card-popup-text-long">
                 Промо-сайт производителя крафтового кваса
               </div>
               <div class="card-popup-price">
@@ -381,21 +333,21 @@
           </div>
           <div class="pagination">
             <div class="pagination-item pagination-item-current">
-              <a href="">
+              <a href="#">
                 <span>
                   1
                 </span>
               </a>
             </div>
             <div class="pagination-item">
-              <a href="">
+              <a href="#">
                 <span>
                   2
                 </span>
               </a>
             </div>
             <div class="pagination-item">
-              <a href="">
+              <a href="#">
                 <span>
                   3
                 </span>
@@ -429,12 +381,12 @@
            </span>
           </li>
           <li>
-            <span>
-              тел. +7 (812) 275-75-75
-            </span>
+              <a href="tel:+7 (812) 275-75-75" class="telefone-number">
+                тел. +7 (812) 275-75-75
+              </a>
           </li>
           <li>
-            <a href="#" class="write-us-button">
+            <a href="write-us.html" class="write-us-button">
               Напишите нам
             </a>
           </li>
@@ -488,7 +440,7 @@
       </form>
     </div>
     <div class="map-marker">
-      <img src="img/map-marker.png" alt="">
+      <img src="img/map-marker.png" alt="Адрес местонахождения" width="231" height="190">
     </div>
     <iframe class="yandex-map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor">
@@ -500,18 +452,18 @@
     <div class="social-media-footer">
       <ul class="socials feedback">
         <li class="footer-social-link">
-          <a href="https://www.facebook.com/">
-            <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук">
+          <a href="https://www.facebook.com/" aria-label="Мы в Фэйсбуке">
+            <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук" width="26" height="15">
           </a>
         </li>
         <li class="footer-social-link">
-          <a href="https://www.instagram.com/?hl=ru">
-            <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм">
+          <a href="https://www.instagram.com/?hl=ru" aria-label="Мы в Инстанрамм">
+            <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм" width="12" height="22">
           </a>
         </li>
         <li class="footer-social-link">
-          <a href="https://twitter.com/?lang=ru">
-            <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер">
+          <a href="https://twitter.com/?lang=ru" aria-label="Мы в Твиттер">
+            <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер" width="21"  height="21">
           </a>
         </li>
       </ul>

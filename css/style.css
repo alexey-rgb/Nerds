@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../font/roboto-regular.woff2");
+  src: url("../font/roboto-regular.woff2"), url("../font/roboto-regular.woff");
 }
 
 
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../font/roboto-medium.woff2");
+  src: url("../font/roboto-medium.woff2"), url("../font/roboto-medium.woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../font/roboto-bold.woff2");
+  src: url("../font/roboto-bold.woff2"), url("../font/roboto-bold.woff");
 }
 
 /* Общие */
@@ -213,7 +213,7 @@ body {
 }
 
 .cart img {
-  padding-right: 21px;
+  margin-right: 21px;
   cursor: pointer;
 }
 
@@ -387,7 +387,7 @@ body {
   font-weight: 500;
   line-height: 18px;
   background-color: #fb565a;
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
 }
 
@@ -434,16 +434,13 @@ body {
   margin: 17px 0;
 }
 
-.cart-text-index span {
+.cart-text-index {
   display: block;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.button-to-order {
-  margin-top: 30px;
+  width: 246px;
 }
 
 .button-to-order {
@@ -454,7 +451,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  border-radius: 2px;
+  border-radius: 3px;
   text-align: center;
   padding: 13px 0;
   width: 160px;
@@ -676,11 +673,11 @@ body {
   margin: 25px 0 0 10px;
 }
 
-.our-promise-bottom span {
+.our-promise-bottom li {
   display: block;
+  width: 89px;
   margin: 0;
   padding: 0;
-
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -750,15 +747,24 @@ body {
 .brands-list li:nth-child(4)::before,
 .brands-list li:nth-child(2)::before,
 .brands-list li:nth-child(3)::before {
-  display: inline-block;
+  display: block;
   content: "";
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
   position: absolute;
-  -webkit-transform: translate(-60px, 10px);
-  -ms-transform: translate(-60px, 10px);
-  transform: translate(-60px, 10px);
+}
+
+.brands-list li:nth-child(2)::before {
+  transform: translate(-45px, 25px);
+}
+
+.brands-list li:nth-child(3)::before {
+  transform: translate(-60px, 5px);
+}
+
+.brands-list li:nth-child(4)::before {
+  transform: translate(-68px, 12px);
 }
 
 /* Карта*/
@@ -780,7 +786,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #eeeeee;
+  background: url("../img/map-static.png");
 }
 
 
@@ -800,6 +806,14 @@ body {
   font-weight: 400;
   line-height: 18px;
   color: #666666;
+}
+
+.telefone-number {
+  color: #666666;
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .write-us-block-title {
@@ -828,7 +842,7 @@ body {
   width: 219px;
   background-color: #fb565a;
   color: #ffffff;
-  border-radius: 2px;
+  border-radius: 3px;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1080,6 +1094,10 @@ body {
   padding: 0;
 }
 
+.footer-social-link img a:focus {
+  outline: 3px solid #000000;
+}
+
 .socials li:nth-child(2) {
   margin-right: 10px;
   margin-left: 7px;
@@ -1100,7 +1118,6 @@ body {
   bottom: 0;
   right: 0;
   margin: auto;
-  padding: 25px;
 }
 
 .socials img:active {
@@ -1327,13 +1344,20 @@ body {
 
 .filter-for-grid li:nth-of-type(2){
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.filter-for-grid li {
   position: relative;
 }
 
 .filter-label {
   padding-left: 36px;
   cursor: pointer;
+}
+
+input[type=radio]:disabled + label {
+  opacity: 0.2;
 }
 
 input[type=radio] + label::before {
@@ -1346,9 +1370,9 @@ input[type=radio] + label::before {
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-  -webkit-transform: translate(-5%, -10%);
-  -ms-transform: translate(-5%, -10%);
-  transform: translate(-5%, -10%);
+  left: 1px;
+  bottom: 1px;
+  transform: translateY(12%);
 }
 
 input[type=radio]:checked + label::before {
@@ -1372,9 +1396,7 @@ input[type=radio]:checked + label::after {
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-  -webkit-transform: translate(61%, -150%);
-  -ms-transform: translate(61%, -150%);
-  transform: translate(61%, -150%);
+  transform: translate(82%, -150%);
 }
 
 input[type=radio]:disabled + label::before {
@@ -1384,87 +1406,72 @@ input[type=radio]:disabled + label::before {
   height: 25px;
   background-color: #ffffff;
   border: 3px solid #4d4d4d;
-  opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-  -webkit-transform: translate(-10%, -10%);
-  -ms-transform: translate(-10%, -10%);
-  transform: translate(-10%, -10%);
+  left: 1px;
+  bottom: 1px;
 }
 
-input[type=radio]:disabled + label::after {
+/*input[type=radio]:disabled + label::after {
   content: "";
   display: block;
   width: 10px;
   height: 10px;
   background-color: #4d4d4d;
-  opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-}
+  left: 8px;
+  top: 5px;
+}*/
 
-input[type=radio]:hover + label::before {
+input[type=radio]:hover:not(.fix) + label::before {
   opacity: 1;
 }
 
-input[type=radio]:checked:hover + label::before {
-  opacity: 1;
-}
-input[type=radio]:checked:hover + label::after {
+input[type=radio]:hover:not(.fix) + label::after {
   opacity: 1;
 }
 
-input[type=checkbox] + span::before {
+input[type=checkbox] + label::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
   opacity: 0.4;
-  background-image: url("../img/checkbox-off.png");
+  background-image: url("../img/svg-nerds/checkbox-off.svg");
   position: absolute;
   background-repeat: no-repeat;
-  -webkit-transform: translate(-10%, -10%);
-  -ms-transform: translate(-10%, -10%);
-  transform: translate(-10%, -10%);
+  left: 1px;
+  bottom: 0;
 }
 
-input[type=checkbox]:checked + span::before {
+input[type=checkbox]:checked + label::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
   opacity: 0.4;
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/svg-nerds/checkbox-on.svg");
   background-repeat: no-repeat;
   position: absolute;
-  -webkit-transform: translate(-10%, -10%);
-  -ms-transform: translate(-10%, -10%);
-  transform: translate(-10%, -10%);
 }
 
-input[type=checkbox]:disabled + span::before {
+input[type=checkbox]:disabled + label::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/svg-nerds/checkbox-off.svg");
   background-repeat: no-repeat;
   position: absolute;
-  -webkit-transform: translate(-10%, -10%);
-  -ms-transform: translate(-10%, -10%);
-  transform: translate(-10%, -10%);
 }
 
-input[type=checkbox]:hover + span::before {
+input[type=checkbox]:disabled + label {
+  opacity: 0.2;
+}
+
+input[type=checkbox]:hover:not(.disabled-text) + label::before {
   opacity: 1;
-}
-
-input[type=checkbox]:checked:hover + span::before {
-  opacity: 1;
-}
-
-.span {
-  padding-left: 30px;
 }
 
 .grid-filter {
@@ -1473,7 +1480,9 @@ input[type=checkbox]:checked:hover + span::before {
 
 .filter-label-second {
   cursor: pointer;
+  padding-left: 30px;
 }
+
 
 .filter-title {
   font-family: "roboto", Arial, sans-serif;
@@ -1557,13 +1566,26 @@ input[type=checkbox]:checked:hover + span::before {
   text-transform: uppercase;
 }
 
-.input-sort span {
+.input-sort a:not(.current-hidden-input) {
   cursor: pointer;
   opacity: 0.3;
   font-family: "roboto", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.current-hidden-input {
+  opacity: 1;
+  cursor: pointer;
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
   text-transform: uppercase;
   position: relative;
 }
@@ -1574,25 +1596,22 @@ input[type=checkbox]:checked:hover + span::before {
   transform: translateX(11px);
 }
 
-input[type=radio]:hover + span {
+input[type=radio]:hover + a {
   opacity: 0.6;
 }
 
-input[type=radio]:checked + span {
+input[type=radio]:active + a {
   opacity: 1;
-}
-
-.input-sort img {
-  opacity: 0.3;
-  cursor: pointer;
 }
 
 input[type=radio]:hover + img {
   opacity: 0.6;
+  cursor: pointer;
 }
 
-input[type=radio]:checked + img {
+input[type=radio]:active + img {
   opacity: 1;
+  cursor: pointer;
 }
 
 .catalog-right-block {
@@ -1617,6 +1636,7 @@ input[type=radio]:checked + img {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  position: relative;
 }
 
 .catalog-goods .catalog-cart {
@@ -1643,42 +1663,41 @@ input[type=radio]:checked + img {
   position: relative;
 }
 
-.white-circle-container {
-  padding-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: 7px;
-  padding-top: 11px;
-}
-
-.white-circle-first {
-  width: 12px;
-  height: 12px;
+.top-card-decoration::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-.white-circle-second {
-  margin: 0 12px;
-  width: 12px;
-  height: 12px;
+.top-card-decoration::after {
+  content: "";
+  position: absolute;
+  left: 62px;
+  top: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-.white-circle-third {
-  width: 12px;
-  height: 12px;
+.one-more-before::after {
+  content: "";
+  position: absolute;
+  left: 38px;
+  top: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-.catalog-cart:hover .white-circle {
+.catalog-cart:hover .top-card-decoration {
   background-color: #eaeaea;
 }
 
@@ -1701,7 +1720,7 @@ input[type=radio]:checked + img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  padding: 25px 80px 43px;
+  padding: 32px 80px 43px;
 }
 
 .hover-block {
@@ -1712,9 +1731,9 @@ input[type=radio]:checked + img {
   font-family: "roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 17px;
   text-transform: uppercase;
-  height: 60px;
+  height: 46px;
   overflow: hidden;
 }
 
@@ -1727,27 +1746,21 @@ input[type=radio]:checked + img {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 19px;
   margin-bottom: 10px;
-  height: 50px;
+  height: 75px;
+  width: 210px;
   overflow: hidden;
 }
 
-.card-popup-text:nth-of-type(2),
-.card-popup-text:nth-of-type(4),
-.card-popup-text:nth-of-type(6) {
+.card-popup-text-long {
   width: 230px;
 }
-
 
 /* Разные способы переноса строки */
 
 .card-popup-text span {
   display: block;
-}
-
-.mishka {
-  width: 200px;
 }
 
 /* конец */
@@ -1760,7 +1773,7 @@ input[type=radio]:checked + img {
   display: block;
   width: 100%;
   background-color: #fb565a;
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
   text-align: center;
   padding: 19px 20px 18px;
