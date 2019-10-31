@@ -7,6 +7,31 @@
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="css/styles-min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+      var myMap = new ymaps.Map("map", {
+        center: [59.938631, 30.323055],
+        zoom: 18
+      });
+    }
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Собственный значок метки',
+      balloonContent: 'Это красивая метка'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-marker.png',
+      iconImageSize: [231, 190],
+      iconImageOffset: [-5, -20]
+    });
+    myMap.geoObjects
+      .add(myPlacemark);
+  </script>
 </head>
 <body>
 <header class="header">
@@ -316,9 +341,9 @@
         </fieldset>
       </form>
     </div>
-    <div class="map-marker">
+    <!--<div class="map-marker">
       <img src="img/map-marker.png" alt="Адрес местонахождения" width="231" height="190">
-    </div>
+    </div>-->
     <iframe class="yandex-map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor">
     </iframe>
@@ -355,7 +380,8 @@
     </div>
   </div>
 </footer>
-<script src="js/popup.js">
+<div id="map" style="width: 100%; height: 400px"></div>
+<script src="js/popup.min.js">
 </script>
 </body>
 </html>

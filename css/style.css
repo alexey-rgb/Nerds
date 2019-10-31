@@ -121,6 +121,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 /* Главная */
@@ -823,7 +824,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background: url("../img/map-static.png");
+  background: url("../img/map-static.png"), #e1e1e1;
 }
 
 
@@ -1581,7 +1582,7 @@ input[type=checkbox]:hover:not(.disabled-text) + label::before {
   margin-bottom: 59px;
 }
 
-.string-of-hidden-input {
+.sort-type-string {
   width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,52 +1610,33 @@ input[type=checkbox]:hover:not(.disabled-text) + label::before {
   text-transform: uppercase;
 }
 
-.input-sort a:not(.current-hidden-input) {
+.sort-type-string a {
   cursor: pointer;
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.sort-type-string a:not(.current-type) {
   opacity: 0.3;
-  font-family: "roboto", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  position: relative;
 }
 
-.current-hidden-input {
-  opacity: 1;
-  cursor: pointer;
-  font-family: "roboto", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.string-of-hidden-input label:nth-child(4) {
+.sort-type-string a:nth-child(4) {
   -webkit-transform: translateX(11px);
   -ms-transform: translateX(11px);
   transform: translateX(11px);
 }
 
-input[type=radio]:hover + a {
+.sort-type-string a:hover:not(.current-type) {
   opacity: 0.6;
 }
 
-input[type=radio]:active + a {
+.sort-type-string a:active:not(.current-type) {
   opacity: 1;
-}
-
-input[type=radio]:hover + img {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-input[type=radio]:active + img {
-  opacity: 1;
-  cursor: pointer;
 }
 
 .catalog-right-block {
@@ -1745,7 +1727,7 @@ input[type=radio]:active + img {
 }
 
 .catalog-cart:hover .hover-block {
-  height: 231px;
+  min-height: 231px;
   position: absolute;
   bottom: 0;
   background-color: #eeeeee;
@@ -1776,8 +1758,7 @@ input[type=radio]:active + img {
   font-weight: 700;
   line-height: 17px;
   text-transform: uppercase;
-  height: 46px;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .link-title-card {
@@ -1790,10 +1771,8 @@ input[type=radio]:active + img {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  margin-bottom: 10px;
-  height: 75px;
   width: 210px;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .card-popup-text-long {

@@ -6,7 +6,7 @@
     Каталог
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="css/styles-min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header-catalog">
@@ -156,37 +156,22 @@
           <h2 class="sort-title">
             Сортировать:
           </h2>
-          <div class="string-of-hidden-input">
-            <label class="input-sort">
-              <input type="radio" name="1" hidden>
-              <a href="#" class="current-hidden-input">
+          <div class="sort-type-string">
+              <a href="#" class="current-type">
                 по цене
               </a>
-            </label>
-            <label class="input-sort">
-              <input type="radio" name="1" hidden>
               <a href="#">
                 по типу
               </a>
-            </label>
-            <label class="input-sort">
-              <input type="radio" name="1" hidden>
-              <a href="#">
+            <a href="#">
                 по названию
               </a>
-            </label>
-            <label class="input-sort">
-              <input type="radio" name="icon" hidden>
-              <a href="#" class="current-hidden-input" aria-label="пo убыванию">
+            <a href="#" class="current-type" aria-label="пo убыванию">
                 <img src="img/svg-nerds/icon-down.svg" alt="по убыванию" width="11" height="10">
               </a>
-            </label>
-            <label class="input-sort">
-              <input type="radio" name="icon" hidden>
-              <a href="#" aria-label="по убыванию">
+            <a href="#" aria-label="по убыванию">
                 <img src="img/svg-nerds/icon-up.svg" alt="по возрастанию" width="11" height="10">
               </a>
-            </label>
           </div>
         </div>
         <div class="catalog-goods">
@@ -370,6 +355,9 @@
   </div>
   <div class="map">
     <div class="container">
+      <div class="map-marker">
+        <img src="img/map-marker.png" alt="Адрес местонахождения" width="231" height="190">
+      </div>
       <div class="write-us-block">
         <h3 class="write-us-block-title">
           NЁRDS DESIGN STUDIO
@@ -442,9 +430,6 @@
         </fieldset>
       </form>
     </div>
-    <div class="map-marker">
-      <img src="img/map-marker.png" alt="Адрес местонахождения" width="231" height="190">
-    </div>
     <iframe class="yandex-map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7510ef67d236e278cdc4c4a06bdbcc5bbf18825d15941446174791b2694e4467&amp;source=constructor">
     </iframe>
@@ -481,7 +466,7 @@
     </div>
   </div>
 </footer>
-<script src="js/popup.js">
+<script src="js/popup.min.js">
 </script>
 </body>
 </html>
