@@ -6,13 +6,13 @@
     Главая Нёрдс
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="css/styles-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU" type="text/javascript">
   </script>
   <script type="text/javascript">
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
-          center: [59.938631, 30.323055],
+          center: [59.939161, 30.321783],
           zoom: 17
         }, {
           searchControlProvider: 'yandex#search'
@@ -20,30 +20,17 @@
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
           '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
           hintContent: 'Собственный значок метки',
           balloonContent: 'Это красивая метка'
         }, {
           iconLayout: 'default#image',
           iconImageHref: 'img/map-marker.png',
           iconImageSize: [231, 190],
-          iconImageOffset: [-40, -180]
-        }),
-        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-          hintContent: 'Собственный значок метки с контентом',
-          balloonContent: 'А эта — новогодняя',
-          iconContent: '12'
-        }, {
-          iconLayout: 'default#imageWithContent',
-          iconImageHref: 'images/ball.png',
-          iconImageSize: [48, 48],
-          iconImageOffset: [-24, -24],
-          iconContentOffset: [15, 15],
-          iconContentLayout: MyIconContentLayout
+          iconImageOffset: [-20, -225]
         });
       myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
+        .add(myPlacemark);
     });
   </script>
 </head>
@@ -308,8 +295,7 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="container-popup show-popup">
+      <div class="container-popup show-popup">
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="popup">
           <h3 class="popup-title">
@@ -355,9 +341,7 @@
         </fieldset>
       </form>
     </div>
-    <!--<div class="map-marker">
-      <img src="img/map-marker.png" alt="Адрес местонахождения" width="231" height="190">
-    </div>-->
+    </div>
     <div id="map" class="yandex-map">
     </div>
   </div>
