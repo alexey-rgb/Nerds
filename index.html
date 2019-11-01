@@ -6,33 +6,7 @@
     Главая Нёрдс
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU" type="text/javascript">
-  </script>
-  <script type="text/javascript">
-    ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
-          center: [59.939161, 30.321783],
-          zoom: 17
-        }, {
-          searchControlProvider: 'yandex#search'
-        }),
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-          hintContent: 'Собственный значок метки',
-          balloonContent: 'Это красивая метка'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: 'img/map-marker.png',
-          iconImageSize: [231, 190],
-          iconImageOffset: [-20, -220]
-        });
-      myMap.geoObjects
-        .add(myPlacemark);
-    });
-  </script>
+  <link rel="stylesheet" href="css/styles-min.css">
 </head>
 <body>
 <header class="header">
@@ -378,6 +352,10 @@
   </div>
 </footer>
 <script src="js/popup.min.js">
+</script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU" type="text/javascript">
+</script>
+<script src="js/map.min.js">
 </script>
 </body>
 </html>

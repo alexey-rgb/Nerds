@@ -87,7 +87,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 52px;
+  padding-top: 50px;
   margin: 0;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
@@ -175,6 +175,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   margin-left: 160px;
+  margin-top: 22px;
 }
 
 .header-navigation-item li {
@@ -210,6 +211,7 @@ body {
 
 .cart {
   margin-left: auto;
+  margin-top: 7px;
 }
 
 .cart img {
@@ -356,8 +358,7 @@ body {
 
 .slider-item h3 {
   max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 4px 0 25px 0;
   font-family: "roboto", Arial, sans-serif;
   font-size: 55px;
   font-weight: 500;
@@ -367,7 +368,7 @@ body {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -453,9 +454,9 @@ body {
   line-height: 18px;
   border-radius: 3px;
   text-align: center;
-  padding: 13px 0;
+  padding: 15px 0;
   width: 160px;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .button-to-order-webs:hover {
@@ -809,7 +810,6 @@ body {
 .map {
   position: relative;
   padding: 0;
-  margin-top: 63px;
 }
 
 .map-marker {
@@ -827,7 +827,6 @@ body {
   background: url("../img/map-static.png"), #e1e1e1;
 }
 
-
 /* блок на карте и попап */
 
 .write-us-block {
@@ -838,10 +837,6 @@ body {
   z-index: 1;
   top: 55px;
   left: 32px;
-  /*bottom: 11%;*/
-  /*-webkit-transform: translate(7px, -10px);
-  -ms-transform: translate(7px, -10px);
-  transform: translate(10px, -17px);*/
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -860,7 +855,7 @@ body {
 .write-us-block-title {
   margin-top: 46px;
   margin-left: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-family: "roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -890,8 +885,8 @@ body {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 39px;
-  padding: 13px 0;
+  margin-top: 37px;
+  padding: 17px 0;
 }
 
 .container-popup {
@@ -1166,7 +1161,7 @@ body {
 }
 
 .offer {
-  margin-left: 136px;
+  margin: 4px 0  0 140px;
 }
 
 .offer span:nth-child(1) {
@@ -1201,7 +1196,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 57px 0;
+  margin: 57px 0 61px 0;
   color: #283136;
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
@@ -1231,8 +1226,8 @@ body {
   min-height: 80px;
   background-color: #eeeeee;
   position: relative;
-  margin-top: 44px;
-  margin-bottom: 16px;
+  margin-top: 48px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -1580,7 +1575,7 @@ input[type=checkbox]:hover:not(.disabled-text) + label::before {
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-  margin-bottom: 59px;
+  margin: 2px 0 59px 0;
 }
 
 .sort-type-string {
@@ -1728,7 +1723,6 @@ input[type=checkbox]:hover:not(.disabled-text) + label::before {
 }
 
 .catalog-cart:hover .hover-block {
-  min-height: 231px;
   position: absolute;
   bottom: 0;
   background-color: #eeeeee;
