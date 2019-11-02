@@ -6,7 +6,7 @@
     Каталог
   </title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="css/styles-min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header-catalog">
@@ -14,33 +14,33 @@
     <div class="header-top-string">
       <div class="logo">
         <a href="index.html">
-          <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65">
+          <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65" tabindex="1">
         </a>
       </div>
       <ul class="header-navigation-item feedback">
         <li>
-          <a href="" class="link-header">
+          <a href="" class="link-header" tabindex="2">
             Студия
           </a>
         </li>
         <li>
-          <a href="" class="link-header">
+          <a href="" class="link-header" tabindex="3">
             Клиенты
           </a>
         </li>
         <li>
-          <a class="link-header link-header-current">
+          <a class="link-header link-header-current" tabindex="4">
             Магазин
           </a>
         </li>
         <li>
-          <a href="" class="link-header">
+          <a href="" class="link-header" tabindex="5">
             Контакты
           </a>
         </li>
       </ul>
       <div class="cart">
-        <a href="" class="link-header">
+        <a href="" class="link-header" tabindex="6">
           <img src="img/svg-nerds/cart-icon.svg" alt="корзина" width="15" height="15">
           Корзина
         </a>
@@ -72,11 +72,11 @@
           <div class="container-price-value">
             <label>
               от
-              <input class="input-value" name="price-ref" value="0">
+              <input class="input-value" name="price-ref" value="0" tabindex="7">
             </label>
             <label>
               до
-              <input class="input-value" name="price-ref" value="15000">
+              <input class="input-value" name="price-ref" value="15000" tabindex="8">
             </label>
           </div>
           <div class="grid-filter">
@@ -84,7 +84,7 @@
               Сетка:
             </span>
             <ul class="filter-for-grid feedback">
-              <li>
+              <li tabindex="9">
                 <input id="mayday" type="radio" name="grid-type" value="adaptive-grid" hidden checked>
                 <label for="mayday" class="filter-label">
                   Адаптивная
@@ -92,13 +92,13 @@
               </li>
               <li>
                 <input id="mayday-second" type="radio" name="grid-type" value="fix-grid" class="fix" hidden disabled>
-                <label for="mayday-second" class="filter-label fix-label">
+                <label for="mayday-second" class="filter-label fix-label" tabindex="10">
                   Фиксированная
                 </label>
               </li>
               <li>
                 <input id="mayday-third" type="radio" name="grid-type" value="rubber-grid" hidden>
-                <label for="mayday-third" class="filter-label">
+                <label for="mayday-third" class="filter-label" tabindex="11">
                   Резиновая
                 </label>
               </li>
@@ -112,40 +112,40 @@
               <li>
                 <input id="one" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden
                        checked>
-                <label for="one" class="filter-label-second">
+                <label for="one" class="filter-label-second" tabindex="12">
                   Слайдер
                 </label>
               </li>
               <li>
                 <input id="two" type="checkbox" name="features" class="checkbox disabled-text" value="advantages-block"
                        hidden disabled>
-                <label for="two" class="filter-label-second">
+                <label for="two" class="filter-label-second" tabindex="13">
                   Блок преимуществ
                 </label>
               </li>
               <li>
                 <input id="three" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden
                        checked>
-                <label for="three" class="filter-label-second">
+                <label for="three" class="filter-label-second" tabindex="14">
                   Новости
                 </label>
               </li>
               <li>
                 <input id="four" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
-                <label for="four" class="filter-label-second">
+                <label for="four" class="filter-label-second" tabindex="15">
                   Галерея
                 </label>
               </li>
               <li>
                 <input id="five" type="checkbox" name="features" class="checkbox" value="advantages-block" hidden>
-                <label for="five" class="filter-label-second">
+                <label for="five" class="filter-label-second" tabindex="16">
                   Корзина
                 </label>
               </li>
             </ul>
           </div>
           <label>
-            <button type="submit" class="button-filter">
+            <button type="submit" class="button-filter" tabindex="17">
               показать
             </button>
           </label>
