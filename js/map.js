@@ -1,9 +1,8 @@
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
       center: [59.939161, 30.321783],
-      zoom: 17
-    }, {
-      searchControlProvider: 'yandex#search'
+      zoom: 17,
+      controls:[]
     }),
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
@@ -15,7 +14,7 @@ ymaps.ready(function () {
       iconLayout: 'default#image',
       iconImageHref: 'img/map-marker.png',
       iconImageSize: [231, 190],
-      iconImageOffset: [-20, -220]
+      iconImageOffset: [-19, -218]
     });
   myMap.geoObjects
     .add(myPlacemark);

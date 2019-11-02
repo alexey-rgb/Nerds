@@ -11,7 +11,7 @@
 <body>
 <header class="header-catalog">
   <div class="container">
-    <div class="header-top-string-catalog">
+    <div class="header-top-string">
       <div class="logo">
         <a href="index.html">
           <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65">
@@ -157,21 +157,21 @@
             Сортировать:
           </h2>
           <div class="sort-type-string">
-              <a href="#" class="current-type">
-                по цене
-              </a>
-              <a href="#">
-                по типу
-              </a>
+            <a href="#" class="current-type">
+              по цене
+            </a>
             <a href="#">
-                по названию
-              </a>
+              по типу
+            </a>
+            <a href="#">
+              по названию
+            </a>
             <a href="#" class="current-type" aria-label="пo убыванию">
-                <img src="img/svg-nerds/icon-down.svg" alt="по убыванию" width="11" height="10">
-              </a>
+              <img src="img/svg-nerds/icon-down.svg" alt="по убыванию" width="11" height="10">
+            </a>
             <a href="#" aria-label="по убыванию">
-                <img src="img/svg-nerds/icon-up.svg" alt="по возрастанию" width="11" height="10">
-              </a>
+              <img src="img/svg-nerds/icon-up.svg" alt="по возрастанию" width="11" height="10">
+            </a>
           </div>
         </div>
         <div class="catalog-goods">
@@ -359,26 +359,19 @@
         <h3 class="write-us-block-title">
           NЁRDS DESIGN STUDIO
         </h3>
-        <ul class="write-us-block-adress feedback">
-          <li class="address">
-            <span>
-              191186, Санкт-Петербург,
-            </span>
-            <span>
-              ул. Б. Конюшенная, д. 19/8
-            </span>
-          </li>
-          <li>
-            <a href="tel:+7(812)275-75-75" class="telefone-number">
-              тел. +7 (812) 275-75-75
-            </a>
-          </li>
-          <li>
-            <a href="write-us.html" class="write-us-button">
-              Напишите нам
-            </a>
-          </li>
-        </ul>
+        <div class="write-us-block-adress">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </div>
+        <div class="telefone-number">
+          <a href="tel:+7(812)275-75-75" class="telefone-number">
+            тел. +7 (812) 275-75-75
+          </a>
+        </div>
+        <div class="write-us-button">
+          <a href="write-us.html">
+            Напишите нам
+          </a>
+        </div>
       </div>
       <div class="container-popup show-popup">
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -392,7 +385,8 @@
                   <label for="name">
                     Ваше имя:
                   </label>
-                  <input id="name" type="text" name="name" placeholder="Имя Фамилия" class="popup-placeholder-padding">
+                  <input id="name" type="text" name="name" placeholder="Имя Фамилия"
+                         class="popup-placeholder-padding">
                 </div>
                 <div>
                   <label for="email">
@@ -464,7 +458,8 @@
 </footer>
 <script src="js/popup.min.js">
 </script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU" type="text/javascript">
+<script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU"
+        type="text/javascript">
 </script>
 <script src="js/map.min.js">
 </script>
