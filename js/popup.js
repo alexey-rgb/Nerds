@@ -1,7 +1,7 @@
 var button_show_popup = document.querySelector(".write-us-button");
 var popup = document.querySelector(".container-popup");
 var close_form = document.querySelector(".close-popup");
-var name = document.querySelector("[name=text]");
+var name = document.querySelector("[name=name]");
 var email = document.querySelector("[name=email]");
 var form = document.querySelector("form");
 popup.classList.remove("show-popup");
@@ -17,6 +17,6 @@ close_form.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if (!email.value || !name.value){
- name.classList.add("shake-form");
+ form.classList.add("shake-form");
 }
 });
