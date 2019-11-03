@@ -10,15 +10,14 @@ button_show_popup.addEventListener("click", function (evt) {
   popup.classList.add("show-popup");
   name.focus();
 });
-form.addEventListener("submit", function (evt) {
-  evt.preventDefault();
-  if (!email || !name){
-    form.classList.add("shake-form");
-  }else {
-    form.classList.remove("shake-form");
-  }
-});
 close_form.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("show-popup");
+});
+form.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  if (!email || !name){
+    popup.classList.remove("shake-form");
+    popup.classList.add("shake-form");
+  }
 });
