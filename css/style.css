@@ -901,7 +901,7 @@ body {
 
 .shake-form {
   animation-name: shake;
-  animation-duration: 6s;
+  animation-duration: 1s;
 }
 
 .popup {
