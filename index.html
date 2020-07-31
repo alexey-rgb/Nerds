@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>
@@ -8,348 +9,345 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-<header class="header">
-  <div class="container">
-    <div class="container-header">
-      <div class="header-top-string">
-        <div class="logo">
-          <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65">
+  <header class="header">
+    <div class="container">
+      <div class="container-header">
+        <div class="header-top-string">
+          <div class="logo">
+            <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65">
+          </div>
+          <ul class="header-navigation-item feedback">
+            <li>
+              <a href="" class="link-header">
+                Студия
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-header">
+                Клиенты
+              </a>
+            </li>
+            <li>
+              <a href="catalog.html" class="link-header">
+                Магазин
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-header">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="cart">
+            <img src="img/svg-nerds/cart-icon.svg" alt="Корзина" width="15" height="15">
+            <a href="#" class="link-header">
+              Корзина
+            </a>
+          </div>
         </div>
-        <ul class="header-navigation-item feedback">
-          <li>
-            <a href="" class="link-header">
-              Студия
-            </a>
-          </li>
-          <li>
-            <a href="" class="link-header">
-              Клиенты
-            </a>
-          </li>
-          <li>
-            <a href="catalog.html" class="link-header">
-              Магазин
-            </a>
-          </li>
-          <li>
-            <a href="" class="link-header">
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <div class="cart">
-          <img src="img/svg-nerds/cart-icon.svg" alt="Корзина" width="15" height="15">
-          <a href="#" class="link-header">
-            Корзина
+        <section class="slider">
+          <h2 class="visually-hidden">
+            Преимущества
+          </h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">
+              Первый
+            </label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">
+              Второй
+            </label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">
+              Третий
+            </label>
+          </div>
+          <ul class="slider-list feedback">
+            <li class="slider-item">
+              <h3>
+                Долго, дорого,
+                <br>
+                скрупулезно.
+              </h3>
+              <p>Математически выверенный дизайн
+                <br>
+                для вашего сайта или мобильного приложения.
+              </p>
+              <a class="slider-item-button button" href="#">
+                Узнать больше
+              </a>
+            </li>
+            <li class="slider-item">
+              <h3>
+                Любим математику как никто другой
+              </h3>
+              <p>
+                Никакого креатива, только математические формулы для расчета идеальных пропорций.
+              </p>
+              <a class="slider-item-button button" href="#">
+                Узнать больше
+              </a>
+            </li>
+            <li class="slider-item">
+              <h3>
+                Только ночь,
+                <br>
+                только хардкор
+              </h3>
+              <p>
+                Работать днем, как все? Мы против этого.
+                <br>
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a class="slider-item-button button" href="#">
+                Узнать больше
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="advantages">
+        <div class="advantages-block">
+          <img src="./img/webs.jpg" alt="Веб-сайты" width="300" height="146">
+          <h2 class="cart-title-index">
+            Веб-сайты
+          </h2>
+          <p class="cart-text-index">
+            Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
+          <a href="" class="button-to-order-webs button-to-order">
+            ЗАКАЗАТЬ
           </a>
         </div>
-      </div>
-      <section class="slider">
-        <h2 class="visually-hidden">
-          Преимущества
-        </h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1">
-            Первый
-          </label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">
-            Второй
-          </label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3">
-            Третий
-          </label>
+        <div class="advantages-block">
+          <img src="./img/apps.jpg" alt="Приложения" width="300" height="146">
+          <h2 class="cart-title-index">
+            Приложения
+          </h2>
+          <p class="cart-text-index">
+            Покорите топ-10 приложений в AppStore и Google Play
+          </p>
+          <a href="" class="button-to-order-apps button-to-order">
+            ЗАКАЗАТЬ
+          </a>
         </div>
-        <ul class="slider-list feedback">
-          <li class="slider-item">
-            <h3>
-              Долго, дорого,
-              <br>
-              скрупулезно.
-            </h3>
-            <p>Математически выверенный дизайн
-              <br>
-              для вашего сайта или мобильного приложения.
-            </p>
-            <a class="slider-item-button button" href="#">
-              Узнать больше
+        <div class="advantages-block">
+          <img src="./img/presentation.jpg" alt="Презентации" width="300" height="146">
+          <h2 class="cart-title-index">
+            Презентации
+          </h2>
+          <p class="cart-text-index">
+            Вы даже не подозреваете, насколько вы изумительны!
+          </p>
+          <a href="" class="button-to-order-presentation button-to-order">
+            ЗАКАЗАТЬ
+          </a>
+        </div>
+      </section>
+      <section class="about-us-desc">
+        <h2 class="visually-hidden">
+          О нас
+        </h2>
+        <div class="about-us-left-column">
+          <p class="about-us">
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.
+          </p>
+          <p class="slogan">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <p class="list-of-services-title">
+            Выполняем заказы на разработку:
+          </p>
+          <ul class="opportunities-list feedback">
+            <li>
+              Веб-сайтов любой сложности
+            </li>
+            <li>
+              Мобильных приложений для iOS и Android
+            </li>
+            <li>
+              Слайдшоу и видео для корпоративных презентаций
+            </li>
+          </ul>
+        </div>
+        <div class="about-us-right-column">
+          <div class="about-us-logo">
+            <img src="./img/nerds-illustration.jpg" alt="Логотип Nerds" width="360" height="208">
+          </div>
+          <p>
+            с 2004 года Любим точность во всем:
+          </p>
+          <ul class="our-promise-top feedback">
+            <li>
+              146
+              <sup>
+                %
+              </sup>
+            </li>
+            <li>
+              100
+              <sup>
+                %
+              </sup>
+            </li>
+            <li>
+              50
+              <sup>
+                %
+              </sup>
+            </li>
+          </ul>
+          <ul class="our-promise-bottom feedback">
+            <li>
+              Уровень самоотдачи
+            </li>
+            <li>
+              Соблюдение сроков
+            </li>
+            <li>
+              Минимальная предоплата
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="brands-string">
+        <h2 class="visually-hidden">
+          Логотипы брендов
+        </h2>
+        <ul class="feedback brands-list">
+          <li>
+            <a href=""><img src="img/logo-borodinski.png" alt="Логотип Barbershop" class="logo-brand" width="209"
+                height="90">
             </a>
           </li>
-          <li class="slider-item">
-            <h3>
-              Любим математику как никто другой
-            </h3>
-            <p>
-              Никакого креатива, только математические формулы для расчета идеальных пропорций.
-            </p>
-            <a class="slider-item-button button" href="#">
-              Узнать больше
+          <li>
+            <a href=""><img src="img/logo-pink.png" alt="Логотип Pink" class="logo-brand" width="185" height="52">
             </a>
           </li>
-          <li class="slider-item">
-            <h3>
-              Только ночь,
-              <br>
-              только хардкор
-            </h3>
-            <p>
-              Работать днем, как все? Мы против этого.
-              <br>
-              Ближе к полуночи работа только начинается.
-            </p>
-            <a class="slider-item-button button" href="#">
-              Узнать больше
+          <li>
+            <a href=""><img src="img/logo-mishka.png" alt="Логотип Mishka" class="logo-brand" width="173" height="84">
             </a>
           </li>
         </ul>
       </section>
     </div>
-  </div>
-</header>
-<main>
-  <div class="container">
-    <section class="advantages">
-      <div class="advantages-block">
-        <img src="./img/webs.jpg" alt="Веб-сайты" width="300" height="146">
-        <h2 class="cart-title-index">
-          Веб-сайты
-        </h2>
-        <p class="cart-text-index">
-          Мир никогда не будет прежним после того как увидит ваш сайт!
-        </p>
-        <a href="" class="button-to-order-webs button-to-order">
-          ЗАКАЗАТЬ
-        </a>
-      </div>
-      <div class="advantages-block">
-        <img src="./img/apps.jpg" alt="Приложения" width="300" height="146">
-        <h2 class="cart-title-index">
-          Приложения
-        </h2>
-        <p class="cart-text-index">
-          Покорите топ-10 приложений в AppStore и Google Play
-        </p>
-        <a href="" class="button-to-order-apps button-to-order">
-          ЗАКАЗАТЬ
-        </a>
-      </div>
-      <div class="advantages-block">
-        <img src="./img/presentation.jpg" alt="Презентации" width="300" height="146">
-        <h2 class="cart-title-index">
-          Презентации
-        </h2>
-        <p class="cart-text-index">
-          Вы даже не подозреваете, насколько вы изумительны!
-        </p>
-        <a href="" class="button-to-order-presentation button-to-order">
-          ЗАКАЗАТЬ
-        </a>
-      </div>
-    </section>
-    <section class="about-us-desc">
-      <h2 class="visually-hidden">
-        О нас
-      </h2>
-      <div class="about-us-left-column">
-        <p class="about-us">
-          Мы — маленькая, но гордая дизайн-студия из Краснодара.
-        </p>
-        <p class="slogan">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <p class="list-of-services-title">
-          Выполняем заказы на разработку:
-        </p>
-        <ul class="opportunities-list feedback">
-          <li>
-            Веб-сайтов любой сложности
-          </li>
-          <li>
-            Мобильных приложений для iOS и Android
-          </li>
-          <li>
-            Слайдшоу и видео для корпоративных презентаций
-          </li>
-        </ul>
-      </div>
-      <div class="about-us-right-column">
-        <div class="about-us-logo">
-          <img src="./img/nerds-illustration.jpg" alt="Логотип Nerds" width="360" height="208">
-        </div>
-        <p>
-          с 2004 года Любим точность во всем:
-        </p>
-        <ul class="our-promise-top feedback">
-          <li>
-            146
-            <sup>
-              %
-            </sup>
-          </li>
-          <li>
-            100
-            <sup>
-              %
-            </sup>
-          </li>
-          <li>
-            50
-            <sup>
-              %
-            </sup>
-          </li>
-        </ul>
-        <ul class="our-promise-bottom feedback">
-          <li>
-            Уровень самоотдачи
-          </li>
-          <li>
-            Соблюдение сроков
-          </li>
-          <li>
-            Минимальная предоплата
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="brands-string">
-      <h2 class="visually-hidden">
-        Логотипы брендов
-      </h2>
-      <ul class="feedback brands-list">
-        <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-html-academy.png" alt="Логотип HTML Academy" class="logo-brand" width="199" height="68">
-          </a>
-        </li>
-        <li>
-          <a href=""><img src="img/logo-borodinski.png" alt="Логотип Barbershop" class="logo-brand" width="209"
-                          height="90">
-          </a>
-        </li>
-        <li>
-          <a href=""><img src="img/logo-pink.png" alt="Логотип Pink" class="logo-brand" width="185" height="52">
-          </a>
-        </li>
-        <li>
-          <a href=""><img src="img/logo-mishka.png" alt="Логотип Mishka" class="logo-brand" width="173" height="84">
-          </a>
-        </li>
-      </ul>
-    </section>
-  </div>
-  <div class="map">
-    <div class="container">
-      <div class="write-us-block">
-        <h3 class="write-us-block-title">
-          NЁRDS DESIGN STUDIO
-        </h3>
-        <div class="write-us-block-adress">
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </div>
-        <div class="telefone-number">
-          <a href="tel:+7(812)275-75-75" class="telefone-number">
-            тел. +7 (812) 275-75-75
-          </a>
-        </div>
-        <div class="write-us-button">
-          <a href="write-us.html">
-            Напишите нам
-          </a>
-        </div>
-      </div>
-      <div class="container-popup show-popup">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="popup">
-            <h3 class="popup-title">
+    <div class="map">
+      <div class="container">
+        <div class="write-us-block">
+          <h3 class="write-us-block-title">
+            NЁRDS DESIGN STUDIO
+          </h3>
+          <div class="write-us-block-adress">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </div>
+          <div class="telefone-number">
+            <a href="tel:+7(812)275-75-75" class="telefone-number">
+              тел. +7 (812) 275-75-75
+            </a>
+          </div>
+          <div class="write-us-button">
+            <a href="write-us.html">
               Напишите нам
-            </h3>
-            <ul class="form-submit feedback">
-              <li class="input-string">
-                <div>
-                  <label for="name">
-                    Ваше имя:
+            </a>
+          </div>
+        </div>
+        <div class="container-popup show-popup">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="popup">
+              <h3 class="popup-title">
+                Напишите нам
+              </h3>
+              <ul class="form-submit feedback">
+                <li class="input-string">
+                  <div>
+                    <label for="name">
+                      Ваше имя:
+                    </label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия"
+                      class="popup-placeholder-padding">
+                  </div>
+                  <div>
+                    <label for="email">
+                      Ваш e-mail:
+                    </label>
+                    <input id="email" type="email" name="e-mail" placeholder="askerbl67@gmail.com"
+                      class="popup-placeholder-padding">
+                  </div>
+                </li>
+                <li>
+                  <label for="text-latter">
+                    Текст письма:
                   </label>
-                  <input id="name" type="text" name="name" placeholder="Имя Фамилия"
-                         class="popup-placeholder-padding">
-                </div>
-                <div>
-                  <label for="email">
-                    Ваш e-mail:
+                  <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
+                    class="textarea-popup textarea-placeholder-padding"></textarea>
+                </li>
+                <li>
+                  <label>
+                    <button type="submit" class="send-button">
+                      Отправить
+                    </button>
                   </label>
-                  <input id="email" type="email" name="e-mail" placeholder="askerbl67@gmail.com"
-                         class="popup-placeholder-padding">
-                </div>
-              </li>
-              <li>
-                <label for="text-latter">
-                  Текст письма:
-                </label>
-                <textarea id="text-latter" name="text-latter" placeholder="В свободной форме"
-                          class="textarea-popup textarea-placeholder-padding"></textarea>
-              </li>
-              <li>
-                <label>
-                  <button type="submit" class="send-button">
-                    Отправить
-                  </button>
-                </label>
-              </li>
-              <li>
-                <div class="button-close">
-                  <button type="button" class="close-popup">
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+                </li>
+                <li>
+                  <div class="button-close">
+                    <button type="button" class="close-popup">
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div id="map" class="yandex-map">
       </div>
     </div>
-    <div id="map" class="yandex-map">
-    </div>
-  </div>
-</main>
-<footer>
-  <div class="container">
-    <div class="social-media-footer">
-      <ul class="socials feedback">
-        <li class="footer-social-link">
-          <a href="https://www.facebook.com/" aria-label="Мы в Фэйсбуке">
-            <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук" width="26" height="15">
-          </a>
-        </li>
-        <li class="footer-social-link">
-          <a href="https://www.instagram.com/?hl=ru" aria-label="Мы в Инстанрамм">
-            <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм" width="12" height="22">
-          </a>
-        </li>
-        <li class="footer-social-link">
-          <a href="https://twitter.com/?lang=ru" aria-label="Мы в Твиттер">
-            <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер" width="21" height="21">
-          </a>
-        </li>
-      </ul>
-      <div class="offer">
-        <span>
-          Давайте дружить, это выгодно!
-        </span>
-        <span>
-          Скидка 10% для друзей из социальных сетей.
-        </span>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="social-media-footer">
+        <ul class="socials feedback">
+          <li class="footer-social-link">
+            <a href="https://www.facebook.com/" aria-label="Мы в Фэйсбуке">
+              <img src="./img/svg-nerds/vk-icon.svg" alt="Логотип Фейсбук" width="26" height="15">
+            </a>
+          </li>
+          <li class="footer-social-link">
+            <a href="https://www.instagram.com/?hl=ru" aria-label="Мы в Инстанрамм">
+              <img src="./img/svg-nerds/fb-icon.svg" alt="Логотип Инстаграм" width="12" height="22">
+            </a>
+          </li>
+          <li class="footer-social-link">
+            <a href="https://twitter.com/?lang=ru" aria-label="Мы в Твиттер">
+              <img src="./img/svg-nerds/insta-icon.svg" alt="Логотип Твиттер" width="21" height="21">
+            </a>
+          </li>
+        </ul>
+        <div class="offer">
+          <span>
+            Давайте дружить, это выгодно!
+          </span>
+          <span>
+            Скидка 10% для друзей из социальных сетей.
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<script src="js/popup.min.js">
-</script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
-</script>
-<script src="js/map.min.js">
-</script>
+  </footer>
+  <script src="js/popup.min.js">
+  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
+  </script>
+  <script src="js/map.min.js">
+  </script>
 </body>
+
 </html>
